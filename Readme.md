@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Olga Danilova](https://up.htmlacademy.ru/htmlcss/27/user/1126609).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Наг](https://htmlacademy.ru/profile/id47061).
 
 ---
 
