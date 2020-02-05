@@ -7,8 +7,8 @@
   </head>
 
   <body>
-    <header>
-      <div>
+    <header class="main-header">
+      <div class="header-top-line">
         <a href="index.html">
           <img src="img/svg/logo-technomart.svg" width="109" height="19" alt="Магазин «Техномарт».">
         </a>
@@ -27,7 +27,7 @@
         <a href="">Оформить заказ</a>
       </div>
 
-      <div>
+      <div class="header-middle-block">
         <p>
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
@@ -44,7 +44,7 @@
           <a href="">Личный кабинет</a>
         </div>
       </div>
-      <nav>
+      <nav class="header-main-navigation">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -71,8 +71,8 @@
       </nav>
     </header>
 
-    <main>
-      <nav aria-label="навигация хлебными крошками">
+    <main class="main-content">
+      <nav class="breadcrumbs-navigation" aria-label="навигация хлебными крошками">
         <ul>
           <li>
             <a href="index.html">Главная</a>
@@ -90,7 +90,7 @@
       </nav>
 
       <h1>Перфораторы</h1>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <form class="products-filter" action="https://echo.htmlacademy.ru/courses" method="get">
         <h2>Фильтр:</h2>
         <fieldset>
           <legend>Цена:</legend>
@@ -151,7 +151,7 @@
         </fieldset>
         <button type="submit">Показать</button>
       </form>
-      <section>
+      <section class="sorting-products">
         <h2>Сортировка:</h2>
         <a href="">По цене</a>
         <a href="">По типу</a>
@@ -159,7 +159,7 @@
         <a href="" aria-label="По возрастанию"></a>
         <a href="" aria-label="По убыванию"></a>
       </section>
-      <section>
+      <section class="products-list">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul>
           <li>
@@ -251,7 +251,7 @@
           </li>
         </ul>
       </section>
-      <nav aria-label="постраничная навигация">
+      <nav class="pagination" aria-label="постраничная навигация">
         <ul>
           <li>
             <a aria-current="page">
@@ -282,8 +282,8 @@
         устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </main>
 
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="footer-top-block">
         <a href="index.html">
           <img src="img/svg/logo-technomart.svg" width="138" height="23" alt="Магазин «Техномарт».">
         </a>
@@ -291,7 +291,7 @@
           г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8<br>
           +7(812)555-05-55
         </p>
-        <nav>
+        <nav class="footer-navigation">
           <ul>
             <li>
               <a href="">Компания</a>
@@ -325,7 +325,7 @@
           </ul>
         </nav>
       </div>
-      <div>
+      <div class="footer-bottom-block">
         <p>
           © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
@@ -344,7 +344,7 @@
       </div>
     </footer>
 
-    <div>
+    <div class="modal-add-to-cart">
       <p>
         Товар добавлен в корзину!
       </p>
