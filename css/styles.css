@@ -1,0 +1,85 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-family: "Cuprum", sans-serif;
+}
+
+.header-top-line {
+  font-size: 17px;
+  line-height: 1.06;
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.header-top-line a {
+  color: #ffffff;
+}
+
+.logo-link {
+  background-color: #ee3643;
+}
+
+.logo-link:hover {
+  background-color: #ca2c37;
+}
+
+.logo-link:active {
+  background-color: #ba2732;
+}
+
+.header-search-form input {
+  background-color: #293449;
+}
+
+.header-search-form input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header-search-form:hover,
+.header-cart:hover,
+.header-bookmark:hover {
+  background-color: #212a3a;
+}
+
+.header-cart:active,
+.header-bookmark:active {
+  background-color: #161d29;
+}
+
+.header-full-cart {
+  background-color: #ee3643;
+}
+
+.header-order-link {
+  background-color: #63a63e;
+}
+
+.header-order-link:hover {
+  background-color: #5fbb2d;
+}
+
+.header-order-link:active {
+  background-color: #518534;
+}
+
+/*Средняя часть хэдэра*/
+
+.header-store-category {
+  font-size: 16px;
+  line-height: 1.44;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 1;
+  color: #e9292a;
+}

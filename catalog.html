@@ -4,40 +4,44 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт: каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
 
   <body>
     <header class="main-header">
       <div class="header-top-line">
-        <a href="index.html">
+        <a class="logo-link" href="index.html">
           <img src="img/svg/logo-technomart.svg" width="109" height="19" alt="Магазин «Техномарт».">
         </a>
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <form class="header-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
           <label>
             Поиск: <input type="search" name="search">
           </label>
           <button type="submit" aria-label="Найти"></button>
         </form>
-        <p>
+        <p class="header-bookmark">
           <a href="">Закладки:</a> 0
         </p>
-        <p>
+        <p class="header-cart header-full-cart">
           <a href="">Корзина:</a> 10
         </p>
-        <a href="">Оформить заказ</a>
+        <a class="header-order-link" href="">Оформить заказ</a>
       </div>
 
       <div class="header-middle-block">
-        <p>
+        <p class="header-store-category">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-        <p>
+        <p class="header-phone">
           <a href="tel:+78125550555">+7(812)555-05-55</a>
         </p>
-        <p>
+        <p class="header-address">
           г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
         </p>
-        <div>
+        <div class="header-user-navigation">
           <a href="">Равшан Джамшутович</a>
           <a href="" aria-label="Выход"></a>
           <a href="">Мои заказы</a>
