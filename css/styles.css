@@ -12,7 +12,7 @@ a {
 
 .header-top-line {
   font-size: 17px;
-  line-height: 1.06;
+  line-height: 18px;
   background-color: #293449;
   color: #ffffff;
 }
@@ -69,17 +69,56 @@ a {
   background-color: #518534;
 }
 
-/*Средняя часть хэдэра*/
+/*Нижняя часть хэдэра*/
+
+.header-bottom-block {
+  background-color: #f4f7f9;
+}
 
 .header-store-category {
   font-size: 16px;
-  line-height: 1.44;
+  line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
-.header-phone {
+.header-phone a {
   font-size: 21px;
-  line-height: 1;
+  line-height: 21px;
   color: #e9292a;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-navigation-btn,
+.user-navigation-user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-main-navigation {
+  background-color: #32425c;
+}
+
+.header-main-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-content {
+  background-color: #ffffff;
 }
