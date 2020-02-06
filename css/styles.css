@@ -25,11 +25,11 @@ a {
   background-color: #ee3643;
 }
 
-.logo-link:hover {
+.logo-link-header:hover {
   background-color: #ca2c37;
 }
 
-.logo-link:active {
+.logo-link-header:active {
   background-color: #ba2732;
 }
 
@@ -121,4 +121,65 @@ a {
 
 .main-content {
   background-color: #ffffff;
+}
+
+/*Футер*/
+
+.main-footer {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-top-block {
+  background-color: #32425c;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-info-menu-list a {
+  color: #f1f5f7;
+}
+
+.footer-products-menu-list a {
+  color: #ffd180;
+}
+
+.footer-bottom-block {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.social-link {
+  background-color: #212a3a;
+}
+
+.social-link:hover,
+.social-link:active {
+  background-color: #ee3643;
+}
+
+.footer-feedback-link,
+.footer-developer-link {
+  color: #ffd180;
+}
+
+.footer-feedback-link:hover,
+.footer-developer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback-link:active,
+.footer-developer-link:active {
+  color: #ee3643;
 }
