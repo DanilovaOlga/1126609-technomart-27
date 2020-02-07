@@ -333,6 +333,51 @@ a {
   color: #32425c;
 }
 
+  /*Сервисы*/
+
+.services {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f4f7f9;
+}
+
+.services-heading-text {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-btn {
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.services-btn-active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.services-btn:hover {
+  background-color: #293449;
+}
+
+.services-sliders-heading {
+  font-family: "Cuprum", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
   /*Информация о доставке*/
 
 .delivery-information {
