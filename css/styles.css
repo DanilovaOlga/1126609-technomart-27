@@ -234,6 +234,67 @@ a {
 
 /*Главная страница*/
 
+.special-offers {
+  font-family: "Cuprum", sans-serif;
+}
+
+.special-offers-list li {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.special-offers-materials {
+  background-color: #ffbf47;
+}
+
+.special-offers-tools {
+  background-color: #3bbce3;
+}
+
+.special-offers-machinery {
+  background-color: #dc91d8;
+}
+
+.special-offers-sale {
+  background-color: #8ed78f;
+}
+
+.special-offers-delivery {
+  background-color: #ffc047;
+}
+
+.special-offers-popular-tools {
+  background-color: #a9a9a9;
+}
+
+.special-offers-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.open-catalog-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.special-offers-list a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.special-offers-list a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .delivery-information {
   background-color: #ffffff;
 }
