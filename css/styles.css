@@ -7,7 +7,14 @@ a {
 }
 
 .visually-hidden {
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
@@ -106,6 +113,19 @@ a {
   background-color: #ffffff;
 }
 
+.user-navigation-btn:hover {
+  color: #ee3643;
+}
+
+.user-navigation-btn:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-navigation-user-name:active {
+  opacity: 0.3;
+}
+
 .user-navigation-link {
   font-size: 16px;
   line-height: 18px;
@@ -113,14 +133,32 @@ a {
   text-decoration: underline;
 }
 
+.user-navigation-link:hover {
+  color: #ee3643;
+}
+
+.user-navigation-link:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+
 .header-main-navigation {
   background-color: #32425c;
 }
 
-.header-main-navigation a {
+.main-navigation-list a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+}
+
+.main-navigation-list a:hover {
+  background-color: #293449;
+}
+
+.main-navigation-list a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
 }
 
 .main-content {
@@ -225,4 +263,143 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
+}
+
+/*Каталог*/
+
+.main-catalog {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs-navigation-list li,
+.breadcrumbs-navigation-list a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-heading {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.products-filter-heading,
+.products-sorting-heading {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.products-filter-price-heading,
+.products-filter-brands-heading,
+.products-filter-power-heading {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+}
+
+.products-filter-price-field input,
+.products-filter-price-value {
+  background-color: #f7f3ec;
+}
+
+.products-filter-brands-list {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.products-filter-btn-show {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*Сортировка*/
+
+.products-sorting {
+  background-color: #f7f3ec;
+}
+
+.products-sorting-link {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.products-sorting-link:hover {
+  opacity: 1;
+}
+
+.active-sort {
+  color: #ee3643;
+  opacity: 1;
+}
+
+.product-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.old-price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-card-buy-btn,
+.product-card-bookmark-btn {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.product-card-buy-btn {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.product-card-buy-btn:hover {
+  background-color: #5fbb2d;
+}
+
+.product-card-buy-btn:active {
+  background-color: #518534;
+}
+
+.product-card-bookmark-btn {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.product-card-bookmark-btn:hover {
+
+}
+
+.product-card-bookmark-btn:active {
+  opacity: 0.3;
 }
