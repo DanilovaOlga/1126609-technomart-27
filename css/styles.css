@@ -1,3 +1,5 @@
+/*Общие стили*/
+
 body {
   font-family: "Arial", sans-serif;
 }
@@ -16,6 +18,8 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*Шапка*/
 
 .main-header {
   font-family: "Cuprum", sans-serif;
@@ -141,6 +145,8 @@ a {
   color: #32425c;
   opacity: 0.3;
 }
+
+/*Главная навигация*/
 
 .header-main-navigation {
   background-color: #32425c;
@@ -289,6 +295,8 @@ a {
   background-color: #f2f6f8;
 }
 
+/*Блок фильтров*/
+
 .products-filter-heading,
 .products-sorting-heading {
   font-size: 13px;
@@ -347,6 +355,8 @@ a {
   color: #ee3643;
   opacity: 1;
 }
+
+/*Карточка товара*/
 
 .product-heading {
   font-size: 18px;
