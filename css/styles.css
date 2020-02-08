@@ -1,0 +1,428 @@
+/*Общие стили*/
+
+body {
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Шапка*/
+
+.main-header {
+  font-family: "Cuprum", sans-serif;
+}
+
+.header-top-line {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.header-top-line a {
+  color: #ffffff;
+}
+
+.logo-link {
+  background-color: #ee3643;
+}
+
+.logo-link-header:hover {
+  background-color: #ca2c37;
+}
+
+.logo-link-header:active {
+  background-color: #ba2732;
+}
+
+.header-search-form input {
+  background-color: #293449;
+}
+
+.header-search-form input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header-search-form:hover,
+.header-cart:hover,
+.header-bookmark:hover {
+  background-color: #212a3a;
+}
+
+.header-cart:active,
+.header-bookmark:active {
+  background-color: #161d29;
+}
+
+.header-full-cart {
+  background-color: #ee3643;
+}
+
+.header-order-link {
+  background-color: #63a63e;
+}
+
+.header-order-link:hover {
+  background-color: #5fbb2d;
+}
+
+.header-order-link:active {
+  background-color: #518534;
+}
+
+/*Нижняя часть хэдэра*/
+
+.header-bottom-block {
+  background-color: #f4f7f9;
+}
+
+.header-store-category {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.header-phone a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #e9292a;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-navigation-btn,
+.user-navigation-user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation-btn:hover {
+  color: #ee3643;
+}
+
+.user-navigation-btn:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.user-navigation-user-name:active {
+  opacity: 0.3;
+}
+
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.user-navigation-link:hover {
+  color: #ee3643;
+}
+
+.user-navigation-link:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+
+/*Главная навигация*/
+
+.header-main-navigation {
+  background-color: #32425c;
+}
+
+.main-navigation-list a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-navigation-list a:hover {
+  background-color: #293449;
+}
+
+.main-navigation-list a:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+.main-content {
+  background-color: #ffffff;
+}
+
+/*Футер*/
+
+.main-footer {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer-top-block {
+  background-color: #32425c;
+}
+
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-info-menu-list a {
+  color: #f1f5f7;
+}
+
+.footer-products-menu-list a {
+  color: #ffd180;
+}
+
+.footer-bottom-block {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.social-link {
+  background-color: #212a3a;
+}
+
+.social-link:hover,
+.social-link:active {
+  background-color: #ee3643;
+}
+
+.footer-feedback-link,
+.footer-developer-link {
+  color: #ffd180;
+}
+
+.footer-feedback-link:hover,
+.footer-developer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback-link:active,
+.footer-developer-link:active {
+  color: #ee3643;
+}
+
+/*Главная страница*/
+
+.delivery-information {
+  background-color: #ffffff;
+}
+
+.delivery-information-headline {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.delivery-information p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.transport-companies-list {
+  font-family: "Cuprum", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.about-company-link,
+.message-btn {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+/*Каталог*/
+
+.main-catalog {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+}
+
+.breadcrumbs-navigation-list li,
+.breadcrumbs-navigation-list a {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-heading {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+/*Блок фильтров*/
+
+.products-filter-heading,
+.products-sorting-heading {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.products-filter-price-heading,
+.products-filter-brands-heading,
+.products-filter-power-heading {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.products-filter-price-field input,
+.products-filter-price-value {
+  background-color: #f7f3ec;
+}
+
+.products-filter-brands-list,
+.products-filter-power-list {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.products-filter-btn-show {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*Сортировка*/
+
+.products-sorting {
+  background-color: #f7f3ec;
+}
+
+.products-sorting-link {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.products-sorting-link:hover {
+  opacity: 1;
+}
+
+.active-sort {
+  color: #ee3643;
+  opacity: 1;
+}
+
+/*Карточка товара*/
+
+.product-heading {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.old-price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.current-price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-card-buy-btn,
+.product-card-bookmark-btn {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.product-card-buy-btn {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.product-card-buy-btn:hover {
+  background-color: #5fbb2d;
+}
+
+.product-card-buy-btn:active {
+  background-color: #518534;
+}
+
+.product-card-bookmark-btn {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.product-card-bookmark-btn:hover {
+
+}
+
+.product-card-bookmark-btn:active {
+  opacity: 0.3;
+}
+
+/*Модальные окна*/
+
+.modal-map,
+.modal-message,
+.modal-add-to-cart {
+  display: none;
+}
