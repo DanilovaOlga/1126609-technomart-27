@@ -1,7 +1,7 @@
 /*Общие стили*/
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
 a {
@@ -275,7 +275,6 @@ a {
 
 .main-catalog {
   font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
   color: #000000;
 }
 
@@ -283,6 +282,7 @@ a {
 .breadcrumbs-navigation-list a {
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -291,6 +291,7 @@ a {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
   color: #32425c;
   background-color: #f2f6f8;
 }
@@ -302,6 +303,7 @@ a {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   background-color: #f7f3ec;
 }
@@ -312,6 +314,7 @@ a {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -320,9 +323,11 @@ a {
   background-color: #f7f3ec;
 }
 
-.products-filter-brands-list {
+.products-filter-brands-list,
+.products-filter-power-list {
   font-size: 15px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -343,6 +348,7 @@ a {
 .products-sorting-link {
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
 }
@@ -360,7 +366,6 @@ a {
 
 .product-heading {
   font-size: 18px;
-  font-weight: 700;
   line-height: 20px;
   text-transform: none;
 }
@@ -412,4 +417,12 @@ a {
 
 .product-card-bookmark-btn:active {
   opacity: 0.3;
+}
+
+/*Модальные окна*/
+
+.modal-map,
+.modal-message,
+.modal-add-to-cart {
+  display: none;
 }
