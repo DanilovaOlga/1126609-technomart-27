@@ -365,7 +365,7 @@ a {
   background-color: #ffffff;
 }
 
-.services-btn:hover {
+.services-btn:hover:not(.services-btn-active) {
   background-color: #293449;
 }
 
