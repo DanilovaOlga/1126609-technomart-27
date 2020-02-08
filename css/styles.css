@@ -485,15 +485,18 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: underline dotted #ee3643;
   color: #000000;
   opacity: 0.3;
 }
 
-.products-sorting-link:hover {
+.products-sorting-link:hover:not(.active-sort) {
   opacity: 1;
+  text-decoration: underline solid #ee3643;
 }
 
 .active-sort {
+  text-decoration: none;
   color: #ee3643;
   opacity: 1;
 }
@@ -554,6 +557,42 @@ a {
 
 .product-card-bookmark-btn:active {
   opacity: 0.3;
+}
+
+  /*Пагинация*/
+
+.pagination-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-current-link {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.product-footnote {
+  background-color: #f4f7f9;
+}
+
+.product-footnote-heading {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.product-footnote-content {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
 }
 
 /*Модальные окна*/
