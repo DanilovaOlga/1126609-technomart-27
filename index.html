@@ -75,99 +75,103 @@
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content main-index">
       <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
       <section class="special-offers">
         <h2 class="visually-hidden">Специальные предложения</h2>
-        <ul>
-          <li>
+        <ul class="special-offers-list">
+          <li class="special-offers-item special-offers-materials">
             Материалы
-            <a href="">На любой вкус</a>
+            <a class="special-offers-link" href="">На любой вкус</a>
           </li>
-          <li>
+          <li class="special-offers-item special-offers-tools">
             Инструмент
-            <a href="">На все случаи</a>
+            <a class="special-offers-link" href="">На все случаи</a>
           </li>
-          <li>
-            <ul>
-              <li>
-                <h3>Дрели</h3>
+          <li class="special-offers-item special-offers-popular-tools">
+            <ul class="popular-tools-list">
+              <li class="popular-tools-item">
+                <h3 class="popular-tools-heading">Дрели</h3>
                 Соседям на радость!
                 <button type="button" aria-label="Назад"></button>
                 <button type="button" aria-label="Вперед"></button>
-                <a href="catalog.html">Открыть каталог</a>
+                <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
               </li>
-              <li>
-                <h3>Перфораторы</h3>
+              <li class="popular-tools-item">
+                <h3 class="popular-tools-heading">Перфораторы</h3>
                 Настоящие мужские игрушки
                 <button type="button" aria-label="Назад"></button>
-                <button type="button" aria-label="Вперед">  </button>
-                <a href="catalog.html">Открыть каталог</a>
+                <button type="button" aria-label="Вперед"></button>
+                <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
           </li>
-          <li>
+          <li class="special-offers-item special-offers-machinery">
             Техника
-            <a href="">Для стройки</a>
+            <a class="special-offers-link" href="">Для стройки</a>
           </li>
-          <li>
+          <li class="special-offers-item special-offers-sale">
             Скидки 50%
-            <a href="">На 350 товаров</a>
+            <a class="special-offers-link" href="">На 350 товаров</a>
           </li>
-          <li>
+          <li class="special-offers-item special-offers-delivery">
             Доставка
-            <a href="">Бесплатно</a>
+            <a class="special-offers-link" href="">Бесплатно</a>
           </li>
         </ul>
       </section>
       <section class="popular-products">
-        <h2>Популярные товары:</h2>
-        <a href="">Все популярные товары</a>
+        <div class="popular-products-heading">
+          <h2 class="popular-heading-text">Популярные товары:</h2>
+          <a class="frequent-button" href="">Все популярные товары</a>
+        </div>
         <ul>
           <li>
             <img src="img/products/Bosch_BFG_9000.jpg" width="218" height="170" alt="Сетевой перфоратор, корпус бирюзового цвета, длина 54 сантиметра, дополнительная рукоятка.">
-            <h3>Перфоратор BOSCH BFG 9000</h3>
-            <span aria-label="Старая цена">32500 р.</span>
-            <span aria-label="Новая цена">25500 р.</span>
-            <div>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+            <h3 class="product-heading">Перфоратор BOSCH BFG 9000</h3>
+            <span class="old-price" aria-label="Старая цена">32500 р.</span>
+            <span class="current-price" aria-label="Новая цена">25500 р.</span>
+            <div class="product-card-hover-block">
+              <button class="product-card-buy-btn" type="button">Купить</button>
+              <button class="product-card-bookmark-btn" type="button">В закладки</button>
             </div>
           </li>
           <li>
             <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3>Перфоратор BOSCH BFG 3000</h3>
-            <span aria-label="Старая цена">22500 р.</span>
-            <span aria-label="Новая цена">15500 р.</span>
-            <div>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+            <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
+            <span class="old-price" aria-label="Старая цена">22500 р.</span>
+            <span class="current-price" aria-label="Новая цена">15500 р.</span>
+            <div class="product-card-hover-block">
+              <button class="product-card-buy-btn" type="button">Купить</button>
+              <button class="product-card-bookmark-btn" type="button">В закладки</button>
             </div>
           </li>
           <li>
             <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
-            <h3>Перфоратор BOSCH BFG 6000</h3>
-            <span aria-label="Старая цена">30500 р.</span>
-            <span aria-label="Новая цена">25500 р.</span>
-            <div>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+            <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
+            <span class="old-price" aria-label="Старая цена">30500 р.</span>
+            <span class="current-price" aria-label="Новая цена">25500 р.</span>
+            <div class="product-card-hover-block">
+              <button class="product-card-buy-btn" type="button">Купить</button>
+              <button class="product-card-bookmark-btn" type="button">В закладки</button>
             </div>
           </li>
           <li>
             <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3>Перфоратор BOSCH BFG 2000</h3>
-            <span aria-label="Цена">12500 р.</span>
-            <div>
-              <button type="button">Купить</button>
-              <button type="button">В закладки</button>
+            <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
+            <span class="current-price" aria-label="Цена">12500 р.</span>
+            <div class="product-card-hover-block">
+              <button class="product-card-buy-btn" type="button">Купить</button>
+              <button class="product-card-bookmark-btn" type="button">В закладки</button>
             </div>
           </li>
         </ul>
       </section>
       <section class="popular-brands">
-        <h2>Популярные производители:</h2>
-        <a href="">Все производители</a>
+        <div class="popular-brands-heading">
+          <h2 class="popular-heading-text">Популярные производители:</h2>
+          <a class="frequent-button" href="">Все производители</a>
+        </div>
         <ul>
           <li>
             <a href="">
@@ -212,36 +216,36 @@
         </ul>
       </section>
       <section class="services">
-        <h2>Сервисы</h2>
+        <h2 class="services-heading-text">Сервисы</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
           покупки приятными.
         </p>
-        <ul>
+        <ul class="services-btn-list">
           <li>
-            <button type="button">Доставка</button>
+            <button class="services-btn services-btn-active" type="button">Доставка</button>
           </li>
           <li>
-            <button type="button">Гарантия</button>
+            <button class="services-btn" type="button">Гарантия</button>
           </li>
           <li>
-            <button type="button">Кредит</button>
+            <button class="services-btn" type="button">Кредит</button>
           </li>
         </ul>
-        <ul>
+        <ul class="services-sliders-list">
           <li>
-            <h3>Доставка</h3>
+            <h3 class="services-sliders-heading">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
               заработаем, поднимая его на ваш этаж!</p>
           </li>
           <li>
-            <h3>Гарантия</h3>
+            <h3 class="services-sliders-heading">Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
               возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
               восстановите как-нибудь сами.</p>
           </li>
           <li>
-            <h3>Кредит</h3>
+            <h3 class="services-sliders-heading">Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
           </li>
         </ul>
@@ -258,11 +262,11 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="about-company-link" href="">Подробнее о компании</a>
+        <a class="frequent-button" href="">Подробнее о компании</a>
         <h3 class="delivery-information-headline">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/index/map-small.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8.">
-        <button class="message-btn" type="button">Заблудились? Напишите нам!</button>
+        <button class="frequent-button  " type="button">Заблудились? Напишите нам!</button>
       </section>
     </main>
 

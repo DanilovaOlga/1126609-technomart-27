@@ -19,6 +19,16 @@ a {
   overflow: hidden;
 }
 
+.frequent-button {
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
 /*Шапка*/
 
 .main-header {
@@ -234,6 +244,142 @@ a {
 
 /*Главная страница*/
 
+  /*Специальные предложения*/
+
+.special-offers {
+  font-family: "Cuprum", sans-serif;
+}
+
+.special-offers-item {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.popular-tools-item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.popular-tools-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.special-offers-materials {
+  background-color: #ffbf47;
+}
+
+.special-offers-tools {
+  background-color: #3bbce3;
+}
+
+.special-offers-machinery {
+  background-color: #dc91d8;
+}
+
+.special-offers-sale {
+  background-color: #8ed78f;
+}
+
+.special-offers-delivery {
+  background-color: #ffc047;
+}
+
+.special-offers-popular-tools {
+  background-color: #a9a9a9;
+}
+
+.special-offers-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.special-offers-link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.special-offers-link:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.open-catalog-link:hover {
+  background-color: #ca2c37;
+}
+
+.open-catalog-link:active {
+  background-color: #ba2732;
+}
+
+  /*Секции популярных товаров и производителей*/
+
+.popular-products-heading,
+.popular-brands-heading {
+  background-color: #f9f5f0;
+}
+
+.popular-heading-text {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+  /*Сервисы*/
+
+.services {
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f4f7f9;
+}
+
+.services-heading-text {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-btn {
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.services-btn-active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.services-btn:hover:not(.services-btn-active) {
+  background-color: #293449;
+}
+
+.services-sliders-heading {
+  font-family: "Cuprum", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+  /*Информация о доставке*/
+
 .delivery-information {
   background-color: #ffffff;
 }
@@ -259,16 +405,6 @@ a {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-}
-
-.about-company-link,
-.message-btn {
-  font-family: "Cuprum", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ee3643;
 }
 
 /*Каталог*/
@@ -365,6 +501,7 @@ a {
 /*Карточка товара*/
 
 .product-heading {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
