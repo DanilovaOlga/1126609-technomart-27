@@ -69,10 +69,21 @@ a {
 }
 
 .header-search-form-field {
-  padding: 12px 0;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 49px;
+
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   border: none;
+  color: #ffffff;
+}
+
+.header-search-form-field::placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
 
 .header-bookmark,
