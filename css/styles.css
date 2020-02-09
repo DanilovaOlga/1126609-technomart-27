@@ -29,6 +29,10 @@ a {
   background-color: #ee3643;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /*Шапка*/
 
 .main-header {
@@ -40,6 +44,43 @@ a {
   line-height: 18px;
   background-color: #293449;
   color: #ffffff;
+}
+
+.header-top-line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo-link-header {
+  display: block;
+  width: 220px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-search-form {
+  width: 270px;
+}
+
+.header-search-form-field {
+  padding: 12px 0;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+}
+
+.header-bookmark,
+.header-cart,
+.header-order-link {
+  width: 150px;
+  padding: 12px 0;
+  text-align: center;
 }
 
 .header-top-line a {
@@ -68,6 +109,7 @@ a {
 }
 
 .header-search-form:hover,
+.header-search-form:hover input:not(:focus),
 .header-cart:hover,
 .header-bookmark:hover {
   background-color: #212a3a;

@@ -12,22 +12,25 @@
   <body>
     <header class="main-header">
       <div class="header-top-line">
-        <a class="logo-link logo-link-header">
-          <img src="img/svg/logo-technomart.svg" width="109" height="19" alt="Магазин «Техномарт».">
-        </a>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <label>
-            Поиск: <input type="search" name="search">
-          </label>
-          <button type="submit" aria-label="Найти"></button>
-        </form>
-        <p class="header-bookmark">
-          <a href="">Закладки:</a> 0
-        </p>
-        <p class="header-cart header-empty-cart">
-          <a href="">Корзина:</a> 0
-        </p>
-        <a class="header-order-link" href="">Оформить заказ</a>
+        <div class="header-top-line-container">
+          <a class="logo-link logo-link-header">
+            <img src="img/svg/logo-technomart.svg" width="109" height="19" alt="Магазин «Техномарт».">
+          </a>
+          <form class="header-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+            <button type="submit" aria-label="Найти"></button>
+            <label>
+              Поиск: <input class="header-search-form-field" type="search" name="search">
+            </label>
+          </form>
+          <div class="header-bookmark">
+            <a href="">Закладки:</a> 0
+          </div>
+          <div class="header-cart header-empty-cart">
+            <a href="">Корзина:</a> 0
+          </div>
+          <a class="header-order-link" href="">Оформить заказ</a>
+
+        </div>
       </div>
 
       <div class="header-bottom-block">
