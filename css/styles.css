@@ -151,16 +151,47 @@ a {
 
 .header-bottom-block {
   background-color: #f4f7f9;
+  padding-bottom: 60px;
+}
+
+.header-middle-block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-bottom: 44px;
 }
 
 .header-store-category {
+  width: 266px;
+  margin: 0;
+  padding: 0 35px;
+
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
+.header-contacts {
+  width: 340px;
+  padding: 0 35px;
+  text-align: center;
+}
+
+.header-phone,
+.header-address {
+  margin: 0;
+  padding: 0;
+}
+
 .header-phone a {
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
@@ -172,25 +203,38 @@ a {
   color: #32425c;
 }
 
+.header-user-navigation {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+
 .user-navigation-btn,
 .user-navigation-user-name {
+  padding: 12px 25px;
+  border: none;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation-btn:hover {
+.user-navigation-btn {
+  margin-right: 10px;
+}
+
+.user-navigation-btn:last-child {
+  margin-right: 0;
+}
+
+.user-navigation-btn:hover,
+.user-navigation-user-name:hover {
   color: #ee3643;
 }
 
-.user-navigation-btn:active {
-  color: #000000;
-  opacity: 0.3;
-}
-
+.user-navigation-btn:active,
 .user-navigation-user-name:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation-link {
@@ -212,10 +256,24 @@ a {
 /*Главная навигация*/
 
 .header-main-navigation {
+  background-color: #f4f7f9;
+}
+
+.main-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
   background-color: #32425c;
 }
 
 .main-navigation-list a {
+  display: block;
+  padding: 0 31px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
