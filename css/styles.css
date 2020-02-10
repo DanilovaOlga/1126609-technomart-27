@@ -1,5 +1,9 @@
 /*Общие стили*/
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
@@ -30,7 +34,7 @@ a {
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /*Шапка*/
@@ -155,9 +159,13 @@ a {
 }
 
 .header-middle-block {
+  background-color: #f4f7f9;
+}
+
+.header-middle-block-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 940px;
   margin: 0 auto;
   padding-top: 46px;
@@ -165,10 +173,10 @@ a {
 }
 
 .header-store-category {
-  width: 266px;
+  flex-shrink: 0;
+  width: 196px;
   margin: 0;
-  padding: 0 35px;
-
+  margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -176,8 +184,9 @@ a {
 }
 
 .header-contacts {
-  width: 340px;
-  padding: 0 35px;
+  flex-shrink: 0;
+  width: 270px;
+  margin-left: 71px;
   text-align: center;
 }
 
@@ -188,9 +197,12 @@ a {
 }
 
 .header-phone a {
+  box-sizing: content-box;
   display: block;
-  width: 100%;
+  width: 144px;
   padding: 9px 0;
+  padding-left: 74px;
+  padding-right: 52px;
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
@@ -204,7 +216,9 @@ a {
 }
 
 .header-user-navigation {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 69px;
   font-size: 0;
   line-height: 0;
 }
@@ -261,7 +275,6 @@ a {
 
 .main-navigation-list {
   display: flex;
-  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -269,13 +282,17 @@ a {
   background-color: #32425c;
 }
 
+.main-navigation-list li {
+  flex-grow: 1;
+}
+
 .main-navigation-list a {
   display: block;
-  padding: 0 31px;
   padding-top: 22px;
   padding-bottom: 21px;
   font-size: 17px;
   line-height: 17px;
+  text-align: center;
   color: #ffffff;
 }
 
