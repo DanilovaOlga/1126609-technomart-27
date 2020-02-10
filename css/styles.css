@@ -165,7 +165,6 @@ a {
 .header-middle-block-container {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
   width: 940px;
   margin: 0 auto;
   padding-top: 46px;
@@ -200,7 +199,7 @@ a {
   padding: 9px 0;
   padding-left: 74px;
   padding-right: 45px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
@@ -209,7 +208,6 @@ a {
 
 .header-address {
   font-size: 14px;
-  line-height: 24px;
   color: #32425c;
 }
 
