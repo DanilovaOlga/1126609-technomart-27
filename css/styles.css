@@ -485,18 +485,18 @@ a {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  text-decoration: underline dotted #ee3643;
+  border-bottom: 1px dotted #ee3643;
   color: #000000;
   opacity: 0.3;
 }
 
 .products-sorting-link:hover:not(.active-sort) {
   opacity: 1;
-  text-decoration: underline solid #ee3643;
+  border-bottom: 1px solid #ee3643;
 }
 
 .active-sort {
-  text-decoration: none;
+  border-bottom: none;
   color: #ee3643;
   opacity: 1;
 }
