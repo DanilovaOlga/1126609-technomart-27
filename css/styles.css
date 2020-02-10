@@ -4,6 +4,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
@@ -31,10 +35,6 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #ee3643;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 
 /*Шапка*/
@@ -164,8 +164,8 @@ a {
 
 .header-middle-block-container {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
+  align-items: flex-end;
   width: 940px;
   margin: 0 auto;
   padding-top: 46px;
@@ -173,7 +173,6 @@ a {
 }
 
 .header-store-category {
-  flex-shrink: 0;
   width: 196px;
   margin: 0;
   margin-left: 53px;
@@ -184,7 +183,6 @@ a {
 }
 
 .header-contacts {
-  flex-shrink: 0;
   width: 270px;
   margin-left: 71px;
   text-align: center;
@@ -197,12 +195,12 @@ a {
 }
 
 .header-phone a {
-  box-sizing: content-box;
   display: block;
-  width: 144px;
+  width: 270px;
   padding: 9px 0;
   padding-left: 74px;
-  padding-right: 52px;
+  padding-right: 45px;
+  margin-bottom: 5px;
   border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
@@ -215,30 +213,65 @@ a {
   color: #32425c;
 }
 
+/*Навигация пользователя*/
+
 .header-user-navigation {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 69px;
   font-size: 0;
   line-height: 0;
 }
 
+.header-user-navigation-authorized {
+  margin-left: 51px;
+}
+
+.header-user-navigation-login,
+.header-user-navigation-authorized-list,
+.header-user-navigation-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .user-navigation-btn,
 .user-navigation-user-name {
-  padding: 12px 25px;
-  border: none;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-navigation-btn {
+.btn-sign-in {
+  padding: 12px 25px;
+  border: none;
+}
+
+.btn-log-in {
+  padding: 12px 27px;
+  padding-left: 48px;
+  border: none;
+}
+
+.header-user-navigation-login-item {
   margin-right: 10px;
 }
 
-.user-navigation-btn:last-child {
+.header-user-navigation-login-item:last-child {
   margin-right: 0;
+}
+
+.user-navigation-user-name {
+  display: block;
+  width: 302px;
+  padding: 12px 0;
+  padding-left: 47px;
+  padding-right: 69px;
+  margin-bottom: 10px;
+}
+
+.header-user-navigation-menu-item {
+  margin: 0 17px;
 }
 
 .user-navigation-btn:hover,
@@ -275,6 +308,7 @@ a {
 
 .main-navigation-list {
   display: flex;
+  justify-content: center;
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -282,17 +316,13 @@ a {
   background-color: #32425c;
 }
 
-.main-navigation-list li {
-  flex-grow: 1;
-}
-
 .main-navigation-list a {
   display: block;
+  padding: 0 30px;
   padding-top: 22px;
   padding-bottom: 21px;
   font-size: 17px;
   line-height: 17px;
-  text-align: center;
   color: #ffffff;
 }
 
