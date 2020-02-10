@@ -1,5 +1,13 @@
 /*Общие стили*/
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
@@ -42,6 +50,54 @@ a {
   color: #ffffff;
 }
 
+.header-top-line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.logo-link-header {
+  display: block;
+  width: 220px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-search-form {
+  width: 270px;
+}
+
+.header-search-form-field {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 49px;
+
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  color: #ffffff;
+}
+
+.header-search-form-field::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.header-bookmark,
+.header-cart,
+.header-order-link {
+  width: 150px;
+  padding: 12px 0;
+  text-align: center;
+}
+
 .header-top-line a {
   color: #ffffff;
 }
@@ -68,6 +124,7 @@ a {
 }
 
 .header-search-form:hover,
+.header-search-form:hover input:not(:focus),
 .header-cart:hover,
 .header-bookmark:hover {
   background-color: #212a3a;
@@ -98,16 +155,53 @@ a {
 
 .header-bottom-block {
   background-color: #f4f7f9;
+  padding-bottom: 60px;
+}
+
+.header-middle-block {
+  background-color: #f4f7f9;
+}
+
+.header-middle-block-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-bottom: 44px;
 }
 
 .header-store-category {
+  width: 196px;
+  margin: 0;
+  margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
 }
 
+.header-contacts {
+  width: 270px;
+  margin-left: 71px;
+  text-align: center;
+}
+
+.header-phone,
+.header-address {
+  margin: 0;
+  padding: 0;
+}
+
 .header-phone a {
+  display: block;
+  width: 270px;
+  padding: 9px 0;
+  padding-left: 74px;
+  padding-right: 45px;
+  margin-bottom: 5px;
+  border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
@@ -119,6 +213,27 @@ a {
   color: #32425c;
 }
 
+/*Навигация пользователя*/
+
+.header-user-navigation {
+  margin-left: 69px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-user-navigation-authorized {
+  margin-left: 51px;
+}
+
+.header-user-navigation-login,
+.header-user-navigation-authorized-list,
+.header-user-navigation-menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .user-navigation-btn,
 .user-navigation-user-name {
   font-size: 21px;
@@ -127,17 +242,46 @@ a {
   background-color: #ffffff;
 }
 
-.user-navigation-btn:hover {
+.btn-sign-in {
+  padding: 12px 25px;
+  border: none;
+}
+
+.btn-log-in {
+  padding: 12px 27px;
+  padding-left: 48px;
+  border: none;
+}
+
+.header-user-navigation-login-item {
+  margin-right: 10px;
+}
+
+.header-user-navigation-login-item:last-child {
+  margin-right: 0;
+}
+
+.user-navigation-user-name {
+  display: block;
+  width: 302px;
+  padding: 12px 0;
+  padding-left: 47px;
+  padding-right: 69px;
+  margin-bottom: 10px;
+}
+
+.header-user-navigation-menu-item {
+  margin: 0 17px;
+}
+
+.user-navigation-btn:hover,
+.user-navigation-user-name:hover {
   color: #ee3643;
 }
 
-.user-navigation-btn:active {
-  color: #000000;
-  opacity: 0.3;
-}
-
+.user-navigation-btn:active,
 .user-navigation-user-name:active {
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-navigation-link {
@@ -159,10 +303,24 @@ a {
 /*Главная навигация*/
 
 .header-main-navigation {
+  background-color: #f4f7f9;
+}
+
+.main-navigation-list {
+  display: flex;
+  justify-content: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
   background-color: #32425c;
 }
 
 .main-navigation-list a {
+  display: block;
+  padding: 0 30px;
+  padding-top: 22px;
+  padding-bottom: 21px;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
