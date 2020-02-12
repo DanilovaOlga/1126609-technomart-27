@@ -357,6 +357,8 @@ a {
   color: #f1f5f7;
 }
 
+  /*Футер верх*/
+
 .footer-top-block {
   padding-bottom: 45px;
   background-color: #32425c;
@@ -388,13 +390,8 @@ a {
   padding: 0;
 }
 
-.footer-navigation a:hover {
-  text-decoration: underline;
-}
-
-.footer-navigation a:active {
-  opacity: 0.5;
-  text-decoration: none;
+.footer-phone-link {
+  color: #ffffff;
 }
 
 .footer-info-menu-list,
@@ -404,6 +401,10 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-info-menu-list {
+  padding-top: 20px;
 }
 
 .footer-info-menu-list a {
@@ -436,6 +437,16 @@ a {
   padding-right: 0;
 }
 
+.footer-navigation a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+  /*Футер низ*/
+
 .footer-bottom-block {
   font-size: 16px;
   line-height: 18px;
@@ -444,17 +455,55 @@ a {
 }
 
 .footer-bottom-block-container {
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 30px;
   width: 940px;
   margin: 0 auto;
 }
 
+.footer-copyright {
+  flex-shrink: 0;
+  width: 228px;
+  padding: 0;
+  margin: 0;
+  margin-right: 161px;
+}
+
+.social-network-list {
+  display: flex;
+  margin: 0 -3px;
+  margin-right: 119px;
+  padding: 0;
+  list-style: none;
+}
+
 .social-link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  margin: 0 3px;
+  border-radius: 50%;
   background-color: #212a3a;
 }
 
 .social-link:hover,
 .social-link:active {
   background-color: #ee3643;
+}
+
+.footer-feedback,
+.footer-developer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-feedback {
+  margin-right: 53px;
+}
+
+.footer-developer {
+  margin-right: 15px;
 }
 
 .footer-feedback-link,
