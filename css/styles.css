@@ -28,11 +28,17 @@ a {
 }
 
 .frequent-button {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  border-radius: 3px;
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
+  /*line-height: 18px;*/
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -94,6 +100,7 @@ a {
 .header-cart,
 .header-order-link {
   width: 150px;
+  margin: 0;
   padding: 12px 0;
   text-align: center;
 }
@@ -159,10 +166,6 @@ a {
 }
 
 .header-middle-block {
-  background-color: #f4f7f9;
-}
-
-.header-middle-block-container {
   display: flex;
   justify-content: flex-end;
   width: 940px;
@@ -335,6 +338,14 @@ a {
 
 .main-content {
   background-color: #ffffff;
+}
+
+/*Мэйн*/
+
+.main-content {
+  background-color: #ffffff;
+  width: 940px;
+  margin: 0 auto;
 }
 
 /*Футер*/
@@ -537,10 +548,38 @@ a {
   /*Информация о доставке*/
 
 .delivery-information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 86px;
   background-color: #ffffff;
 }
 
+.delivery-information-paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.delivery-information-paragraph-first {
+  margin-bottom: 26px;
+}
+
+.delivery-information-paragraph-second {
+  margin-bottom: 16px;
+}
+
+.delivery-information-paragraph-third {
+  width: 179px;
+  margin-bottom: 34px;
+}
+
 .delivery-information-headline {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -549,18 +588,44 @@ a {
   text-transform: uppercase;
 }
 
-.delivery-information p {
-  font-family: "PT Sans", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
+.transport-companies-delivery {
+  width: 519px;
 }
 
 .transport-companies-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 37px;
+  list-style: none;
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+}
+
+.transport-companies-list li {
+  padding-left: 36px;
+  margin-bottom: 22px;
+}
+
+.self-delivery {
+  width: 300px;
+  line-height: 0;
+}
+
+.self-delivery img {
+  margin-bottom: 40px;
+}
+
+.about-company-btn {
+  width: 220px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 3px;
+}
+
+.message-btn {
+  width: 300px;
 }
 
 /*Каталог*/
