@@ -96,7 +96,7 @@
       <nav class="breadcrumbs-navigation" aria-label="навигация хлебными крошками">
         <ul class="breadcrumbs-navigation-list">
           <li>
-            <a href="index.html">Главная</a>
+            <a class="breadcrumbs-navigation-index-icon" href="index.html"></a>
           </li>
           <li>
             <a>Каталог</a>
@@ -111,191 +111,197 @@
       </nav>
 
       <h1 class="catalog-heading">Перфораторы</h1>
-      <form class="products-filter" action="https://echo.htmlacademy.ru/courses" method="get">
-        <h2 class="products-filter-heading">Фильтр:</h2>
-        <fieldset class="products-filter-price-field">
-          <legend class="products-filter-price-heading">Цена:</legend>
-          <input type="range" min="0" max="30000" step="500"><br>
-          <span class="products-filter-price-value">0</span> — <span class="products-filter-price-value">30000</span>
-        </fieldset>
-        <fieldset class="products-filter-brands-field">
-          <legend class="products-filter-brands-heading">Производители:</legend>
-          <ul class="products-filter-brands-list">
-            <li>
-              <label>
-                <input type="checkbox" name="bosch">
-                Bosch
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="interskol">
-                Интерскол
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="makita">
-                Makita
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="dewalt">
-                Dewalt
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="hitachi">
-                Hitachi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="products-filter-power-heading">Питание:</legend>
-          <ul class="products-filter-power-list">
-            <li>
-              <label>
-                <input type="radio" name="power-supply" value="accumulator">
-                Аккумуляторные
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="power-supply" value="mains-power">
-                Сетевые
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="products-filter-btn-show" type="submit">Показать</button>
-      </form>
-      <section class="products-sorting">
-        <h2 class="products-sorting-heading">Сортировка:</h2>
-        <a class="products-sorting-link active-sort" href="">По цене</a>
-        <a class="products-sorting-link" href="">По типу</a>
-        <a class="products-sorting-link" href="">По функционалу</a>
-        <a class="products-sorting-link" href="" aria-label="По возрастанию"></a>
-        <a class="products-sorting-link" href="" aria-label="По убыванию"></a>
-      </section>
-      <section class="products-list">
-        <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="product-cards-list">
-          <li>
-            <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
-            <span class="old-price" aria-label="Старая цена">22500 р.</span>
-            <span class="current-price" aria-label="Новая цена">15500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
-            <span class="old-price" aria-label="Старая цена">30500 р.</span>
-            <span class="current-price" aria-label="Новая цена">25500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
-            <span class="current-price" aria-label="Цена">12500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
-            <span class="old-price" aria-label="Старая цена">22500 р.</span>
-            <span class="current-price" aria-label="Новая цена">15500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
-            <span class="old-price" aria-label="Старая цена">30500 р.</span>
-            <span class="current-price" aria-label="Новая цена">25500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
-            <span class="current-price" aria-label="Цена">12500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
-            <span class="old-price" aria-label="Старая цена">22500 р.</span>
-            <span class="current-price" aria-label="Новая цена">15500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
-            <span class="old-price" aria-label="Старая цена">30500 р.</span>
-            <span class="current-price" aria-label="Новая цена">25500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-          <li>
-            <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
-            <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
-            <span class="current-price" aria-label="Цена">12500 р.</span>
-            <div class="product-card-hover-block">
-              <button class="product-card-buy-btn" type="button">Купить</button>
-              <button class="product-card-bookmark-btn" type="button">В закладки</button>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <nav class="pagination" aria-label="постраничная навигация">
-        <ul>
-          <li>
-            <a class="pagination-link pagination-current-link" aria-current="page">
-              <span class="visually-hidden">Страница</span>1
-            </a>
-          </li>
-          <li>
-            <a class="pagination-link" href="">
-              <span class="visually-hidden">Страница</span>2
-            </a>
-          </li>
-          <li>
-            <a class="pagination-link" href="">
-              <span class="visually-hidden">Страница</span>3
-            </a>
-          </li>
-          <li>
-            <a class="pagination-link" href="">
-              Следующая<span class="visually-hidden">Страница</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-catalog-container">
+        <div class="main-catalog-left-column">
+          <form class="products-filter" action="https://echo.htmlacademy.ru/courses" method="get">
+            <h2 class="products-filter-heading">Фильтр:</h2>
+            <fieldset class="products-filter-price-field">
+              <legend class="products-filter-price-heading">Цена:</legend>
+              <input type="range" min="0" max="30000" step="500"><br>
+              <span class="products-filter-price-value">0</span> — <span class="products-filter-price-value">30000</span>
+            </fieldset>
+            <fieldset class="products-filter-brands-field">
+              <legend class="products-filter-brands-heading">Производители:</legend>
+              <ul class="products-filter-brands-list">
+                <li>
+                  <label>
+                    <input type="checkbox" name="bosch">
+                    Bosch
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="interskol">
+                    Интерскол
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="makita">
+                    Makita
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="dewalt">
+                    Dewalt
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="hitachi">
+                    Hitachi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="products-filter-power-heading">Питание:</legend>
+              <ul class="products-filter-power-list">
+                <li>
+                  <label>
+                    <input type="radio" name="power-supply" value="accumulator">
+                    Аккумуляторные
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="power-supply" value="mains-power">
+                    Сетевые
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="products-filter-btn-show" type="submit">Показать</button>
+          </form>
+        </div>
+        <div class="main-catalog-right-column">
+          <section class="products-sorting">
+            <h2 class="products-sorting-heading">Сортировка:</h2>
+            <a class="products-sorting-link active-sort" href="">По цене</a>
+            <a class="products-sorting-link" href="">По типу</a>
+            <a class="products-sorting-link" href="">По функционалу</a>
+            <a class="products-sorting-link" href="" aria-label="По возрастанию"></a>
+            <a class="products-sorting-link" href="" aria-label="По убыванию"></a>
+          </section>
+          <section class="products-list">
+            <h2 class="visually-hidden">Список товаров</h2>
+            <ul class="product-cards-list">
+              <li>
+                <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
+                <span class="old-price" aria-label="Старая цена">22500 р.</span>
+                <span class="current-price" aria-label="Новая цена">15500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
+                <span class="old-price" aria-label="Старая цена">30500 р.</span>
+                <span class="current-price" aria-label="Новая цена">25500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
+                <span class="current-price" aria-label="Цена">12500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
+                <span class="old-price" aria-label="Старая цена">22500 р.</span>
+                <span class="current-price" aria-label="Новая цена">15500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
+                <span class="old-price" aria-label="Старая цена">30500 р.</span>
+                <span class="current-price" aria-label="Новая цена">25500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
+                <span class="current-price" aria-label="Цена">12500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_3000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
+                <span class="old-price" aria-label="Старая цена">22500 р.</span>
+                <span class="current-price" aria-label="Новая цена">15500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_6000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, длиной 42 сантиметра, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 6000</h3>
+                <span class="old-price" aria-label="Старая цена">30500 р.</span>
+                <span class="current-price" aria-label="Новая цена">25500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+              <li>
+                <img src="img/products/Bosch_BFG_2000.jpg" width="218" height="170" alt="Аккумуляторный перфоратор, бирюзового цвета, с двумя рукоятками и ограничителем глубины.">
+                <h3 class="product-heading">Перфоратор BOSCH BFG 2000</h3>
+                <span class="current-price" aria-label="Цена">12500 р.</span>
+                <div class="product-card-hover-block">
+                  <button class="product-card-buy-btn" type="button">Купить</button>
+                  <button class="product-card-bookmark-btn" type="button">В закладки</button>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <nav class="pagination" aria-label="постраничная навигация">
+            <ul>
+              <li>
+                <a class="pagination-link pagination-current-link" aria-current="page">
+                  <span class="visually-hidden">Страница</span>1
+                </a>
+              </li>
+              <li>
+                <a class="pagination-link" href="">
+                  <span class="visually-hidden">Страница</span>2
+                </a>
+              </li>
+              <li>
+                <a class="pagination-link" href="">
+                  <span class="visually-hidden">Страница</span>3
+                </a>
+              </li>
+              <li>
+                <a class="pagination-link" href="">
+                  Следующая<span class="visually-hidden">Страница</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <div class="product-footnote">
         <h2 class="product-footnote-heading">Пара слов о перфораторах</h2>
         <p class="product-footnote-content">
