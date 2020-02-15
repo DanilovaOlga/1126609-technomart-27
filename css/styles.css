@@ -309,6 +309,7 @@ a {
 
 .main-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 940px;
   margin: 0 auto;
@@ -928,11 +929,7 @@ a {
   list-style: none;
 }
 
-.product-cards-list li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+.product-card-item {
   width: 220px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -944,11 +941,11 @@ a {
 }
 
 .product-heading {
-  width: 220px;
-  padding-top: 7px;
-  padding-bottom: 3px;
-  padding-left: 31px;
-  padding-right: 32px;
+  width: 218px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 31px;
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
@@ -961,9 +958,9 @@ a {
 .old-price,
 .current-price {
   display: block;
-  width: 122px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 141px;
+  margin-right: 37px;
+  margin-left: 42px;
 
   font-size: 17px;
   font-weight: 700;
@@ -973,26 +970,44 @@ a {
 }
 
 .old-price {
+  padding-top: 6px;
+  padding-bottom: 10px;
+
   color: #999999;
   text-decoration: line-through;
 }
 
 .current-price {
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+
   color: #ffffff;
   background-color: #ee3643;
 }
 
+  /*Кнопки ховера*/
+
 .product-card-buy-btn,
 .product-card-bookmark-btn {
+  display: block;
+  width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 .product-card-buy-btn {
+  padding-left: 49px;
+  padding-right: 45px;
+  border: none;
+  margin-bottom: 8px;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -1006,8 +1021,15 @@ a {
 }
 
 .product-card-bookmark-btn {
+  padding-left: 33px;
+  padding-right: 28px;
+  border: 3px solid #63a63e;
   color: #32425c;
   background-color: #ffffff;
+}
+
+.product-card-bookmark-btn:hover {
+  border-color: #32425c;
 }
 
 .product-card-bookmark-btn:active {
@@ -1016,7 +1038,18 @@ a {
 
 .product-card-hover-block {
   display: none;
+  height: 170px;
 }
+
+/*.product-card-item:hover .product-image{*/
+/*  display: none;*/
+/*}*/
+
+/*.product-card-item:hover .product-card-hover-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}*/
 
   /*Пагинация*/
 
