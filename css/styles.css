@@ -29,14 +29,15 @@ a {
 
 .frequent-button {
   display: block;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   border-radius: 3px;
+
   font-family: "Cuprum", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  /*line-height: 18px;*/
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -73,6 +74,7 @@ a {
   width: 220px;
   padding-top: 13px;
   padding-bottom: 10px;
+
   text-align: center;
   font-size: 0;
   line-height: 0;
@@ -105,7 +107,9 @@ a {
 .header-order-link {
   width: 150px;
   margin: 0;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   text-align: center;
 }
 
@@ -161,8 +165,9 @@ a {
   /*Нижняя часть хэдэра*/
 
 .header-bottom-block {
-  background-color: #f4f7f9;
   padding-bottom: 60px;
+
+  background-color: #f4f7f9;
 }
 
 .header-middle-block {
@@ -176,8 +181,10 @@ a {
 
 .header-store-category {
   width: 196px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 53px;
+
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -187,6 +194,7 @@ a {
 .header-contacts {
   width: 270px;
   margin-left: 71px;
+
   text-align: center;
 }
 
@@ -199,11 +207,13 @@ a {
 .header-phone a {
   display: block;
   width: 270px;
-  padding: 9px 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
   padding-left: 74px;
   padding-right: 45px;
   margin-bottom: 10px;
   border: 3px solid #ffffff;
+
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
@@ -218,6 +228,7 @@ a {
 
 .header-user-navigation {
   margin-left: 69px;
+
   font-size: 0;
   line-height: 0;
 }
@@ -231,6 +242,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -243,12 +255,17 @@ a {
 }
 
 .btn-sign-in {
-  padding: 12px 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
   border: none;
 }
 
 .btn-log-in {
-  padding: 12px 27px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 27px;
   padding-left: 48px;
   border: none;
 }
@@ -264,7 +281,8 @@ a {
 .user-navigation-user-name {
   display: block;
   width: 302px;
-  padding: 12px 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 47px;
   padding-right: 69px;
   margin-bottom: 8px;
@@ -322,15 +340,18 @@ a {
   width: 940px;
   margin: 0 auto;
   padding: 0;
+
   list-style: none;
   background-color: #32425c;
 }
 
 .main-navigation-list a {
   display: block;
-  padding: 0 30px;
   padding-top: 22px;
   padding-bottom: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -352,9 +373,10 @@ a {
 /*Мэйн*/
 
 .main-content {
-  background-color: #ffffff;
   width: 940px;
   margin: 0 auto;
+
+  background-color: #ffffff;
 }
 
 /*Футер*/
@@ -389,6 +411,7 @@ a {
   padding-top: 20px;
   padding-bottom: 25px;
   margin-bottom: 32px;
+
   line-height: 0;
   text-align: center;
 }
@@ -409,6 +432,7 @@ a {
   justify-content: flex-end;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -418,7 +442,11 @@ a {
 
 .footer-info-menu-list a {
   display: block;
-  padding: 22px 30px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   line-height: 18px;
   color: #f1f5f7;
 }
@@ -433,7 +461,11 @@ a {
 
 .footer-products-menu-list a {
   display: block;
-  padding: 23px 30px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+
   line-height: 18px;
   color: #ffd180;
 }
@@ -475,15 +507,20 @@ a {
   flex-shrink: 0;
   width: 228px;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   margin-right: 161px;
 }
 
 .social-network-list {
   display: flex;
-  margin: 0 -3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -3px;
   margin-right: 119px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -672,12 +709,14 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 86px;
+
   background-color: #ffffff;
 }
 
 .delivery-information-paragraph {
   margin: 0;
   padding: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -698,9 +737,12 @@ a {
 }
 
 .delivery-information-headline {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
   margin-bottom: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -714,9 +756,12 @@ a {
 }
 
 .transport-companies-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
   margin-bottom: 37px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+
   list-style: none;
   font-family: "Cuprum", sans-serif;
   font-size: 18px;
@@ -731,10 +776,10 @@ a {
 
 .self-delivery {
   width: 300px;
-  line-height: 0;
 }
 
 .self-delivery img {
+  display: block;
   margin-bottom: 40px;
 }
 
@@ -770,6 +815,7 @@ a {
 .breadcrumbs-navigation-list li,
 .breadcrumbs-navigation-list a {
   display: block;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -832,10 +878,10 @@ a {
 }
 
 .products-filter-heading {
-  padding-left: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 0;
+  padding-left: 18px;
+  margin-top: 0;
   margin-bottom: 20px;
   border-radius: 3px;
 }
@@ -845,13 +891,28 @@ a {
 .products-filter-power-heading {
   font-size: 17px;
   font-weight: 700;
-  line-height: 30px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.products-filter-price-field input,
+.products-filter-price-heading {
+  margin-bottom: 14px;
+}
+
+.price-value-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .products-filter-price-value {
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+
+  text-align: center;
   background-color: #f7f3ec;
 }
 
@@ -863,10 +924,75 @@ a {
   color: #000000;
 }
 
+.products-filter-price-field,
+.products-filter-brands-field,
+.product-filter-power-field {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.products-filter-price-field {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.products-filter-range-container {
+  width: 220px;
+  height: 80px;
+  padding: 27px 20px;
+  margin-bottom: 9px;
+  border-radius: 3px;
+
+  background-color: #f7f3ec;
+}
+
+.products-filter-brands-heading,
+.products-filter-power-heading {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.products-filter-brands-list,
+.products-filter-power-list {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e5e5e5;
+
+  list-style: none;
+}
+
+.products-filter-power-list {
+  padding-bottom: 70px;
+  border: none;
+}
+
+.products-filter-brands-list li,
+.products-filter-power-list li {
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.products-filter-brands-list input,
+.products-filter-power-list input {
+  display: none;
+}
+
 .products-filter-btn-show {
+  width: 140px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
@@ -893,6 +1019,7 @@ a {
 .products-sorting-link {
   position: relative;
   display: block;
+
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1023,6 +1150,7 @@ a {
   padding-right: 45px;
   border: none;
   margin-bottom: 8px;
+
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -1039,6 +1167,7 @@ a {
   padding-left: 33px;
   padding-right: 28px;
   border: 3px solid #63a63e;
+
   color: #32425c;
   background-color: #ffffff;
 }

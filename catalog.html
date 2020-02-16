@@ -117,8 +117,17 @@
             <h2 class="products-filter-heading">Фильтр:</h2>
             <fieldset class="products-filter-price-field">
               <legend class="products-filter-price-heading">Цена:</legend>
-              <input type="range" min="0" max="30000" step="500"><br>
-              <span class="products-filter-price-value">0</span> — <span class="products-filter-price-value">30000</span>
+<!--              <div class="products-filter-range-container">-->
+<!--                <input type="range" min="0" max="30000" step="500">-->
+<!--              </div>-->
+              <div class="products-filter-range-container">
+              </div>
+              <div class="price-value-container">
+                <input class="products-filter-price-value" type="text" name="min-price" value="0">
+                —
+                <input class="products-filter-price-value" type="text" name="max-price" value="30000">
+              </div>
+<!--              <span class="products-filter-price-value">0</span> — <span class="products-filter-price-value">30000</span>-->
             </fieldset>
             <fieldset class="products-filter-brands-field">
               <legend class="products-filter-brands-heading">Производители:</legend>
@@ -155,7 +164,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="product-filter-power-field">
               <legend class="products-filter-power-heading">Питание:</legend>
               <ul class="products-filter-power-list">
                 <li>
