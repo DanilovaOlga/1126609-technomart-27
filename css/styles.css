@@ -591,6 +591,10 @@ a {
 
 .special-offers-item {
   width: 300px;
+  padding-left: 25px;
+  padding-right: 140px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 
@@ -598,6 +602,12 @@ a {
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
+}
+
+.popular-tools-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .popular-tools-item {
@@ -637,10 +647,18 @@ a {
 }
 
 .special-offers-link {
+  display: block;
+  width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
 }
