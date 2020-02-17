@@ -578,7 +578,22 @@ a {
   font-family: "Cuprum", sans-serif;
 }
 
+.special-offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  background-color: #e5e5e5;
+}
+
 .special-offers-item {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -617,6 +632,7 @@ a {
 }
 
 .special-offers-popular-tools {
+  width: 620px;
   background-color: #a9a9a9;
 }
 
@@ -647,18 +663,56 @@ a {
 
 /*Секции популярных товаров и производителей*/
 
+.popular-products-btn,
+.popular-brands-btn {
+  width: 253px;
+  margin-right: 24px;
+}
+
 .popular-products-heading,
 .popular-brands-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   background-color: #f9f5f0;
 }
 
 .popular-heading-text {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin: 0;
+
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+}
+
+.popular-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-brands-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
 }
 
 /*Сервисы*/
@@ -1060,11 +1114,17 @@ a {
 .product-cards-list {
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
-  margin: 0;
+  width: 720px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -20px;
   padding: 0;
 
   list-style: none;
+}
+
+.product-cards-list-index {
+  width: 960px;
 }
 
 .product-card-item {
@@ -1072,13 +1132,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 220px;
-  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
-}
-
-.product-cards-list li:nth-child(3n) {
-  margin-right: 0;
 }
 
 .product-image {
