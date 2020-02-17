@@ -578,11 +578,36 @@ a {
   font-family: "Cuprum", sans-serif;
 }
 
+.special-offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  background-color: #e5e5e5;
+}
+
 .special-offers-item {
+  width: 300px;
+  padding-left: 25px;
+  padding-right: 140px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
+}
+
+.popular-tools-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .popular-tools-item {
@@ -617,14 +642,23 @@ a {
 }
 
 .special-offers-popular-tools {
+  width: 620px;
   background-color: #a9a9a9;
 }
 
 .special-offers-link {
+  display: block;
+  width: 135px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 15px;
+  border-radius: 3px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -647,18 +681,56 @@ a {
 
 /*Секции популярных товаров и производителей*/
 
+.popular-products-btn,
+.popular-brands-btn {
+  width: 253px;
+  margin-right: 24px;
+}
+
 .popular-products-heading,
 .popular-brands-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   background-color: #f9f5f0;
 }
 
 .popular-heading-text {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin: 0;
+
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
+}
+
+.popular-brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -20px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-brands-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
 }
 
 /*Сервисы*/
