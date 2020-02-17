@@ -575,18 +575,23 @@ a {
 /*Специальные предложения*/
 
 .special-offers {
+  margin-top: 59px;
+  margin-bottom: 33px;
   font-family: "Cuprum", sans-serif;
 }
 
 .special-offers-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: 320px 320px 300px;
+  -ms-grid-columns: 320px 320px 300px;
+  grid-template-rows: 143px 143px 143px;
+  -ms-grid-rows: 143px 143px 143px;
   width: 940px;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  background-color: #e5e5e5;
 }
 
 .special-offers-item {
@@ -617,32 +622,72 @@ a {
 }
 
 .popular-tools-heading {
+  margin: 0;
   font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
   text-transform: uppercase;
 }
 
 .special-offers-materials {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   background-color: #ffbf47;
 }
 
 .special-offers-tools {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   background-color: #3bbce3;
 }
 
 .special-offers-machinery {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   background-color: #dc91d8;
 }
 
 .special-offers-sale {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   background-color: #8ed78f;
 }
 
 .special-offers-delivery {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   background-color: #ffc047;
 }
 
 .special-offers-popular-tools {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   width: 620px;
+  height: 266px;
   background-color: #a9a9a9;
 }
 
