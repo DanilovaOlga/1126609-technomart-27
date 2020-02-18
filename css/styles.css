@@ -18,6 +18,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -80,6 +85,11 @@ a {
   text-align: center;
   font-size: 0;
   line-height: 0;
+}
+
+.logo-link-header img {
+  width: 109px;
+  height: 19px;
 }
 
 .header-search-form {
@@ -368,16 +378,9 @@ a {
   background-color: #1d2739;
 }
 
-.main-content {
-  background-color: #ffffff;
-}
-
 /*Мэйн*/
 
 .main-content {
-  width: 940px;
-  margin: 0 auto;
-
   background-color: #ffffff;
 }
 
@@ -416,6 +419,11 @@ a {
 
   line-height: 0;
   text-align: center;
+}
+
+.logo-link-footer img {
+  width: 138px;
+  height: 23px;
 }
 
 .footer-address {
@@ -575,18 +583,21 @@ a {
 /*Специальные предложения*/
 
 .special-offers {
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 59px;
   margin-bottom: 33px;
   font-family: "Cuprum", sans-serif;
 }
 
 .special-offers-list {
-  display: grid;
   display: -ms-grid;
-  grid-template-columns: 320px 320px 300px;
+  display: grid;
   -ms-grid-columns: 320px 320px 300px;
-  grid-template-rows: 143px 143px 143px;
   -ms-grid-rows: 143px 143px 143px;
+  grid-template-columns: 320px 320px 300px;
+  grid-template-rows: 143px 143px 143px;
   width: 940px;
   margin: 0;
   padding: 0;
@@ -630,64 +641,66 @@ a {
 }
 
 .special-offers-materials {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   background-color: #ffbf47;
 }
 
 .special-offers-tools {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   background-color: #3bbce3;
 }
 
 .special-offers-machinery {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   background-color: #dc91d8;
 }
 
 .special-offers-sale {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
   background-color: #8ed78f;
 }
 
 .special-offers-delivery {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+
   background-color: #ffc047;
 }
 
 .special-offers-popular-tools {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   width: 620px;
   height: 266px;
+
   background-color: #a9a9a9;
 }
 
@@ -725,6 +738,16 @@ a {
 }
 
 /*Секции популярных товаров и производителей*/
+
+.popular-products,
+.popular-brands {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.popular-brands {
+  margin-bottom: 85px;
+}
 
 .popular-products-btn,
 .popular-brands-btn {
@@ -788,7 +811,19 @@ a {
   background-color: #f4f7f9;
 }
 
+.services-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.services-heading {
+  width: 398px;
+}
+
 .services-heading-text {
+  margin: 0;
+  padding-top: 64px;
+  padding-bottom: 28px;
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -796,7 +831,28 @@ a {
   text-transform: uppercase;
 }
 
+.services-heading p {
+  margin: 0;
+  padding-bottom: 22px;
+}
+
+.services-btn-list {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .services-btn {
+  width: 240px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  border: none;
+  box-shadow:
+    inset 0 -1px 0 0 #293449,
+    inset 0 1px 0 0 #405069;
+
   font-family: "Cuprum", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -806,6 +862,7 @@ a {
 }
 
 .services-btn-active {
+  box-shadow: none;
   color: #32425c;
   background-color: #ffffff;
 }
@@ -828,6 +885,9 @@ a {
 .delivery-information {
   display: flex;
   justify-content: space-between;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 86px;
 
   background-color: #ffffff;
