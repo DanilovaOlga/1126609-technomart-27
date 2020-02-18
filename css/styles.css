@@ -1029,14 +1029,16 @@ img {
 /*Каталог*/
 
 .main-catalog {
-  width: 940px;
-  margin: 0 auto;
-
   font-family: "PT Sans", sans-serif;
   color: #000000;
 }
 
 /*Хлебные крошки*/
+
+.breadcrumbs-navigation {
+  width: 940px;
+  margin: 0 auto;
+}
 
 .breadcrumbs-navigation-list {
   display: flex;
@@ -1072,8 +1074,11 @@ img {
 }
 
 .catalog-heading {
+  width: 940px;
   margin-top: 0;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 29px;
   padding-bottom: 31px;
   padding-left: 30px;
@@ -1089,6 +1094,8 @@ img {
 
 .main-catalog-container {
   display: flex;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .main-catalog-left-column {
@@ -1443,25 +1450,81 @@ img {
 
 /*Пагинация*/
 
+.pagination {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 60px;
+  padding-left: 0;
+  padding-right: 0;
+
+  list-style: none;
+}
+
 .pagination-link {
+  display: block;
+  min-width: 38px;
+  min-height: 38px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
 }
 
+.pagination-link:hover {
+  border-color: #bdc6ca;
+}
+
+.pagination-link:active {
+  border-color: #ee3643;
+}
+
 .pagination-current-link {
+  border: none;
+
   color: #ffffff;
   background-color: #ee3643;
 }
+
+.pagination-link-next {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/*Информационная сноска*/
 
 .product-footnote {
   background-color: #f4f7f9;
 }
 
+.product-footnote-container {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 68px;
+}
+
 .product-footnote-heading {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 28px;
+  padding-left: 0;
+  padding-right: 0;
+
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -1471,6 +1534,8 @@ img {
 }
 
 .product-footnote-content {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
