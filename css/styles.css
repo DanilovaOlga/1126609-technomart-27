@@ -78,6 +78,7 @@ img {
 }
 
 .logo-link-header {
+  position: relative;
   width: 220px;
   padding-top: 13px;
   padding-bottom: 10px;
@@ -85,6 +86,18 @@ img {
   text-align: center;
   font-size: 0;
   line-height: 0;
+}
+
+.logo-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
 }
 
 .logo-link-header img {
@@ -129,11 +142,13 @@ img {
   color: #ffffff;
 }
 
-.logo-link-header:hover {
+.logo-link-header:hover,
+.logo-link-header:hover::after {
   background-color: #ca2c37;
 }
 
-.logo-link-header:active {
+.logo-link-header:active,
+.logo-link-header:active::after {
   background-color: #ba2732;
 }
 
@@ -355,6 +370,7 @@ img {
 
   list-style: none;
   background-color: #32425c;
+  box-shadow: inset 0 -5px 0 0 #293449;
 }
 
 .main-navigation-list a {
@@ -412,6 +428,7 @@ img {
 }
 
 .logo-link-footer {
+  position: relative;
   width: 220px;
   padding-top: 20px;
   padding-bottom: 25px;
@@ -729,6 +746,10 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.open-catalog-link {
+  width: 195px;
+}
+
 .open-catalog-link:hover {
   background-color: #ca2c37;
 }
@@ -801,6 +822,16 @@ img {
   border: 1px solid #eaeaea;
 }
 
+.popular-brands-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-brands-item:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
+
+
 /*Сервисы*/
 
 .services {
@@ -842,6 +873,7 @@ img {
 }
 
 .services-btn-list {
+  position: relative;
   width: 240px;
   margin: 0;
   padding-top: 68px;
@@ -850,6 +882,18 @@ img {
   padding-right: 0;
 
   list-style: none;
+}
+
+.services-btn-list::before {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  content: "";
+  width: 10px;
+  height: 279px;
+
+  background-image: url("../img/index/shadow.png");
+  background-repeat: no-repeat;
 }
 
 .services-btn {
@@ -884,8 +928,6 @@ img {
 .services-sliders-list {
   width: 700px;
   margin: 0;
-  padding-top: 68px;
-  padding-bottom: 99px;
   padding-left: 80px;
   padding-right: 0;
 
@@ -894,10 +936,26 @@ img {
 
 .services-sliders-item {
   display: none;
+  padding-top: 68px;
+  padding-bottom: 125px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .services-sliders-item-block {
   display: block;
+}
+
+.services-sliders-item-delivery {
+  background-image: url("../img/index/services/delivery.png");
+}
+
+.services-sliders-item-guarantee {
+  background-image: url("../img/index/services/guarantee.png");
+}
+
+.services-sliders-item-credit {
+  background-image: url("../img/index/services/credit.png");
 }
 
 .services-sliders-heading {
@@ -1405,6 +1463,7 @@ img {
 
   color: #ffffff;
   background-color: #63a63e;
+  box-shadow: inset 0 -3px 0 0 #367315;
 }
 
 .product-card-buy-btn:hover {
@@ -1446,6 +1505,10 @@ img {
 
 .product-card-item:hover .product-card-hover-block {
   display: flex;
+}
+
+.product-card-item:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 /*Пагинация*/
