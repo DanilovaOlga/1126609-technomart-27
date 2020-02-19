@@ -605,6 +605,7 @@ img {
   margin-right: auto;
   margin-top: 59px;
   margin-bottom: 33px;
+
   font-family: "Cuprum", sans-serif;
 }
 
@@ -623,6 +624,7 @@ img {
 }
 
 .special-offers-item {
+  position: relative;
   width: 300px;
   padding-left: 25px;
   padding-right: 140px;
@@ -637,16 +639,93 @@ img {
   color: #ffffff;
 }
 
+.special-offers-item:not(.special-offers-popular-tools)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 31px;
+  width: 80px;
+  height: 74px;
+  margin-top: -37px;
+
+  background-image: url("../img/svg/special-offers-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.special-offers-materials::after {
+  background-position: 0 99%;
+}
+
+.special-offers-tools::after {
+  background-position: 0 73%;
+}
+
+.special-offers-machinery::after {
+  background-position: 0 0;
+}
+
+.special-offers-sale::after {
+  background-position: 0 22%;
+}
+
+.special-offers-delivery::after {
+  background-position: 0 47%;
+}
+
 .popular-tools-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.special-offers-sliders-btn {
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/svg/slider-arrows.svg");
+  background-repeat: no-repeat;
+}
+
+.special-offers-sliders-btn-left {
+  left: 25px;
+  background-position: 0 0;
+}
+
+.special-offers-sliders-btn-right {
+  right: 20px;
+  background-position: 100% 0;
+}
+
 .popular-tools-item {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 620px;
+  height: 266px;
+  padding-left: 25px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.popular-tools-item-visible {
+  display: flex;
+}
+
+.popular-tools-item-drill {
+  background-image: url("../img/index/slider-image-1.jpg");
+}
+
+.popular-tools-item-perforator {
+  background-image: url("../img/index/slider-image-2.jpg");
 }
 
 .popular-tools-heading {
@@ -709,6 +788,7 @@ img {
 }
 
 .special-offers-popular-tools {
+  position: relative;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-column-start: 1;
@@ -717,6 +797,7 @@ img {
   grid-row-end: 4;
   width: 620px;
   height: 266px;
+  padding: 0;
 
   background-color: #a9a9a9;
 }
