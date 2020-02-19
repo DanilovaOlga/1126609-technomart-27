@@ -1547,5 +1547,45 @@ img {
 .modal-map,
 .modal-message,
 .modal-add-to-cart {
-  display: none;
+  display: block;
+}
+
+.modal-add-to-cart {
+  width: 620px;
+}
+
+.add-to-cart-text {
+  margin: 0;
+  padding-top: 73px;
+  padding-bottom: 67px;
+
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.add-to-cart-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 37px;
+  padding-bottom: 37px;
+  margin: 0;
+
+  background-color: #f1f1f1;
+}
+
+.add-to-cart-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.checkout-btn {
+  width: 220px;
+}
+
+.continue-shopping-btn {
+  width: 220px;
+
+  color: #000000;
+  background-color: #ffffff;
 }
