@@ -388,26 +388,30 @@
     <button type="button" aria-label="Закрыть"></button>
   </div>
   <div class="modal-message">
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <p>
-        <label>
-          Ваше имя:<br>
-          <input type="text" name="user-name" placeholder="Имя Фамилия">
-        </label>
+    <form class="modal-message-form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="modal-message-fields-container">
+        <p>
+          <label class="modal-message-label">
+            Ваше имя:<br>
+            <input class="modal-message-field modal-message-input" type="text" name="user-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label class="modal-message-label">
+            Ваш e-mail:<br>
+            <input class="modal-message-field modal-message-input" type="email" name="user-email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label class="modal-message-label">
+            Текст письма:<br>
+            <textarea class="modal-message-field modal-message-textarea" name="user-message" placeholder="В свободной форме" rows="4"></textarea>
+          </label>
+        </p>
+      </div>
+      <p class="modal-message-send">
+        <button class="modal-message-send-btn frequent-button" type="submit">Отправить</button>
       </p>
-      <p>
-        <label>
-          Ваш e-mail:<br>
-          <input type="email" name="user-email" placeholder="email@example.com">
-        </label>
-      </p>
-      <p>
-        <label>
-          Текст письма:<br>
-          <textarea name="user-message" placeholder="В свободной форме"></textarea>
-        </label>
-      </p>
-      <button type="submit">Отправить</button>
     </form>
     <button type="button" aria-label="Закрыть"></button>
   </div>
