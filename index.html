@@ -98,27 +98,29 @@
           Инструмент
           <a class="special-offers-link" href="">На все случаи</a>
         </li>
-        <li class="special-offers-item special-offers-popular-tools">
-          <ul class="popular-tools-list">
-            <li class="popular-tools-item">
-              <h3 class="popular-tools-heading">Дрели</h3>
-              Соседям на радость!
-              <button type="button" aria-label="Назад"></button>
-              <button type="button" aria-label="Вперед"></button>
-              <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
-            </li>
-            <li class="popular-tools-item">
-              <h3 class="popular-tools-heading">Перфораторы</h3>
-              Настоящие мужские игрушки
-              <button type="button" aria-label="Назад"></button>
-              <button type="button" aria-label="Вперед"></button>
-              <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
-            </li>
-          </ul>
-        </li>
         <li class="special-offers-item special-offers-machinery">
           Техника
           <a class="special-offers-link" href="">Для стройки</a>
+        </li>
+        <li class="special-offers-item special-offers-popular-tools">
+          <button class="special-offers-sliders-btn special-offers-sliders-btn-left" type="button" aria-label="Назад"></button>
+          <button class="special-offers-sliders-btn special-offers-sliders-btn-right" type="button" aria-label="Вперед"></button>
+          <ul class="popular-tools-list">
+            <li class="popular-tools-item popular-tools-item-visible popular-tools-item-drill">
+              <div class="popular-tools-heading-container">
+                <h3 class="popular-tools-heading">Дрели</h3>
+                Соседям на радость!
+              </div>
+              <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="popular-tools-item popular-tools-item-perforator">
+              <div class="popular-tools-heading-container">
+                <h3 class="popular-tools-heading">Перфораторы</h3>
+                Настоящие мужские игрушки
+              </div>
+              <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
         </li>
         <li class="special-offers-item special-offers-sale">
           Скидки 50%
@@ -133,7 +135,7 @@
     <section class="popular-products">
       <div class="popular-products-heading">
         <h2 class="popular-heading-text">Популярные товары:</h2>
-        <a class="frequent-button" href="">Все популярные товары</a>
+        <a class="frequent-button popular-products-btn" href="">Все популярные товары</a>
       </div>
       <ul class="product-cards-list product-cards-list-index">
         <li class="product-card-item">
@@ -192,91 +194,97 @@
     <section class="popular-brands">
       <div class="popular-brands-heading">
         <h2 class="popular-heading-text">Популярные производители:</h2>
-        <a class="frequent-button" href="">Все производители</a>
+        <a class="frequent-button popular-brands-btn" href="">Все производители</a>
       </div>
-      <ul>
-        <li>
-          <a href="">
+      <ul class="popular-brands-list">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/bosch.jpg" width="126" height="37" alt="Каталог товаров бренда Bosh.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/makita.jpg" width="123" height="40" alt="Каталог товаров бренда Makita.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/de-walt.png" width="146" height="44" alt="Каталог товаров бренда Dewalt.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/interskol.jpg" width="200" height="88"
               alt="Каталог товаров бренда Интерскол.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/hitachi.png" width="169" height="31" alt="Каталог товаров бренда Hitachi.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/lg.jpg" width="121" height="73" alt="Каталог товаров бренда LG.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/aeg.jpg" width="151" height="96" alt="Каталог товаров бренда AEG.">
           </a>
         </li>
-        <li>
-          <a href="">
+        <li class="popular-brands-item">
+          <a class="popular-brands-link" href="">
             <img src="img/index/brand-logo/metabo.jpg" width="204" height="69" alt="Каталог товаров бренда Metabo.">
           </a>
         </li>
       </ul>
     </section>
     <section class="services">
-      <h2 class="services-heading-text">Сервисы</h2>
-      <p>
-        Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
-        покупки приятными.
-      </p>
-      <ul class="services-btn-list">
-        <li>
-          <button class="services-btn services-btn-active" type="button">Доставка</button>
-        </li>
-        <li>
-          <button class="services-btn" type="button">Гарантия</button>
-        </li>
-        <li>
-          <button class="services-btn" type="button">Кредит</button>
-        </li>
-      </ul>
-      <ul class="services-sliders-list">
-        <li>
-          <h3 class="services-sliders-heading">Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж!</p>
-        </li>
-        <li>
-          <h3 class="services-sliders-heading">Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
-            возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
-            восстановите как-нибудь сами.</p>
-        </li>
-        <li>
-          <h3 class="services-sliders-heading">Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        </li>
-      </ul>
+      <div class="services-container">
+        <div class="services-heading">
+          <h2 class="services-heading-text">Сервисы</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
+            покупки приятными.
+          </p>
+        </div>
+        <div class="services-sliders-container">
+          <ul class="services-btn-list">
+            <li>
+              <button class="services-btn services-btn-active" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="services-btn" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="services-btn" type="button">Кредит</button>
+            </li>
+          </ul>
+          <ul class="services-sliders-list">
+            <li class="services-sliders-item services-sliders-item-delivery services-sliders-item-block">
+              <h3 class="services-sliders-heading">Доставка</h3>
+              <p class="services-sliders-delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем,<br>поднимая его на ваш этаж!</p>
+            </li>
+            <li class="services-sliders-item services-sliders-item-guarantee">
+              <h3 class="services-sliders-heading">Гарантия</h3>
+              <p class="services-sliders-guarantee">Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его
+                возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж
+                восстановите как-нибудь сами.</p>
+            </li>
+            <li class="services-sliders-item services-sliders-item-credit">
+              <h3 class="services-sliders-heading">Кредит</h3>
+              <p class="services-sliders-credit">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="delivery-information">
       <h2 class="visually-hidden">Информация о доставке</h2>
       <section class="transport-companies-delivery">
-        <h3 class="delivery-information-headline">Компания "Техномарт"</h3>
+        <h3 class="delivery-information-headline">Компания «Техномарт»</h3>
         <p class="delivery-information-paragraph delivery-information-paragraph-first">Настоящий мужской шоппинг
           начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -382,26 +390,30 @@
     <button type="button" aria-label="Закрыть"></button>
   </div>
   <div class="modal-message">
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
-      <p>
-        <label>
-          Ваше имя:<br>
-          <input type="text" name="user-name" placeholder="Имя Фамилия">
-        </label>
+    <form class="modal-message-form" action="https://echo.htmlacademy.ru/courses" method="post">
+      <div class="modal-message-fields-container">
+        <p>
+          <label class="modal-message-label">
+            Ваше имя:<br>
+            <input class="modal-message-field modal-message-input" type="text" name="user-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p>
+          <label class="modal-message-label">
+            Ваш e-mail:<br>
+            <input class="modal-message-field modal-message-input" type="email" name="user-email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p>
+          <label class="modal-message-label">
+            Текст письма:<br>
+            <textarea class="modal-message-field modal-message-textarea" name="user-message" placeholder="В свободной форме" rows="4"></textarea>
+          </label>
+        </p>
+      </div>
+      <p class="modal-message-send">
+        <button class="modal-message-send-btn frequent-button" type="submit">Отправить</button>
       </p>
-      <p>
-        <label>
-          Ваш e-mail:<br>
-          <input type="email" name="user-email" placeholder="email@example.com">
-        </label>
-      </p>
-      <p>
-        <label>
-          Текст письма:<br>
-          <textarea name="user-message" placeholder="В свободной форме"></textarea>
-        </label>
-      </p>
-      <button type="submit">Отправить</button>
     </form>
     <button type="button" aria-label="Закрыть"></button>
   </div>
