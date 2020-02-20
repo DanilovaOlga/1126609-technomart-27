@@ -106,7 +106,24 @@ img {
 }
 
 .header-search-form {
+  position: relative;
   width: 270px;
+  background-color: #e5e5e5;
+}
+
+.header-search-btn {
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  width: 17px;
+  height: 17px;
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .header-search-form-field {
@@ -639,39 +656,6 @@ img {
   color: #ffffff;
 }
 
-.special-offers-item:not(.special-offers-popular-tools)::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 31px;
-  width: 80px;
-  height: 74px;
-  margin-top: -37px;
-
-  background-image: url("../img/svg/special-offers-bg.svg");
-  background-repeat: no-repeat;
-}
-
-.special-offers-materials::after {
-  background-position: 0 99%;
-}
-
-.special-offers-tools::after {
-  background-position: 0 73%;
-}
-
-.special-offers-machinery::after {
-  background-position: 0 0;
-}
-
-.special-offers-sale::after {
-  background-position: 0 22%;
-}
-
-.special-offers-delivery::after {
-  background-position: 0 47%;
-}
-
 .popular-tools-list {
   margin: 0;
   padding: 0;
@@ -687,18 +671,19 @@ img {
   border: none;
 
   background-color: transparent;
-  background-image: url("../img/svg/slider-arrows.svg");
   background-repeat: no-repeat;
+  background-size: 22px 40px;
+  background-position: 0 0;
 }
 
 .special-offers-sliders-btn-left {
   left: 25px;
-  background-position: 0 0;
+  background-image: url("../img/svg/icon-left.svg");
 }
 
 .special-offers-sliders-btn-right {
   right: 20px;
-  background-position: 100% 0;
+  background-image: url("../img/svg/icon-right.svg");
 }
 
 .popular-tools-item {
@@ -743,7 +728,12 @@ img {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+
   background-color: #ffbf47;
+  background-image: url("../img/svg/icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: 44px 65px;
+  background-position: right 43px top 31px;
 }
 
 .special-offers-tools {
@@ -753,7 +743,12 @@ img {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+
   background-color: #3bbce3;
+  background-image: url("../img/svg/icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 61px;
+  background-position: right 28px top 33px;
 }
 
 .special-offers-machinery {
@@ -763,7 +758,12 @@ img {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+
   background-color: #dc91d8;
+  background-image: url("../img/svg/icon-3.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 62px;
+  background-position: right 31px top 31px;
 }
 
 .special-offers-sale {
@@ -773,7 +773,12 @@ img {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+
   background-color: #8ed78f;
+  background-image: url("../img/svg/icon-4.svg");
+  background-repeat: no-repeat;
+  background-size: 59px 72px;
+  background-position: right 45px top 26px;
 }
 
 .special-offers-delivery {
@@ -785,6 +790,10 @@ img {
   grid-row-end: 4;
 
   background-color: #ffc047;
+  background-image: url("../img/svg/icon-5.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 63px;
+  background-position: right 31px top 32px;
 }
 
 .special-offers-popular-tools {
