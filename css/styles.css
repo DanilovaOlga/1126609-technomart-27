@@ -69,13 +69,19 @@ img {
   color: #ffffff;
 }
 
+.header-top-line a {
+  color: #ffffff;
+}
+
 .header-top-line-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 940px;
   margin: 0 auto;
 }
+
+/*Логотип*/
 
 .logo-link-header {
   position: relative;
@@ -105,6 +111,20 @@ img {
   height: 19px;
 }
 
+.logo-link-header:hover,
+.logo-link-header:hover::after,
+.logo-link-header:focus,
+.logo-link-header:focus::after {
+  background-color: #ca2c37;
+}
+
+.logo-link-header:active,
+.logo-link-header:active::after {
+  background-color: #ba2732;
+}
+
+/*Поиск*/
+
 .header-search-form {
   position: relative;
   width: 270px;
@@ -124,13 +144,14 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .header-search-form-field {
   width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 49px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 48px;
 
   font-family: inherit;
   font-size: 17px;
@@ -144,31 +165,6 @@ img {
   opacity: 1;
 }
 
-.header-bookmark,
-.header-cart,
-.header-order-link {
-  width: 150px;
-  margin: 0;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  text-align: center;
-}
-
-.header-top-line a {
-  color: #ffffff;
-}
-
-.logo-link-header:hover,
-.logo-link-header:hover::after {
-  background-color: #ca2c37;
-}
-
-.logo-link-header:active,
-.logo-link-header:active::after {
-  background-color: #ba2732;
-}
-
 .header-search-form input {
   background-color: #293449;
 }
@@ -178,24 +174,47 @@ img {
   color: #000000;
 }
 
-.header-search-form:hover,
-.header-search-form:hover input:not(:focus),
-.header-cart:hover,
-.header-bookmark:hover {
-  background-color: #212a3a;
+/*Закладки, корзина, оформить заказ*/
+
+.header-bookmark-link,
+.header-cart-link,
+.header-order-link {
+  display: block;
+  width: 150px;
+  padding-top: 11px;
+  padding-bottom: 13px;
 }
 
-.header-cart:active,
-.header-bookmark:active {
-  background-color: #161d29;
+.header-bookmark-link {
+  padding-left: 44px;
 }
 
-.header-full-cart {
+.header-cart-link {
+  padding-left: 50px;
+}
+
+.header-full-cart-link {
+  padding-right: 25px;
   background-color: #ee3643;
 }
 
 .header-order-link {
+  padding-left: 20px;
+  padding-right: 22px;
+
   background-color: #63a63e;
+}
+
+.header-search-form:hover,
+.header-search-form:hover input:not(:focus),
+.header-cart-link:hover,
+.header-bookmark-link:hover {
+  background-color: #212a3a;
+}
+
+.header-cart-link:active,
+.header-bookmark-link:active {
+  background-color: #161d29;
 }
 
 .header-order-link:hover {
