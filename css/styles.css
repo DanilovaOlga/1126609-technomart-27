@@ -165,13 +165,27 @@ img {
   opacity: 1;
 }
 
-.header-search-form input {
+.header-search-form-field {
   background-color: #293449;
 }
 
-.header-search-form input:focus {
+.header-search-form-field:focus {
   background-color: #ffffff;
   color: #000000;
+}
+
+.header-search-form:hover,
+.header-search-form:hover input:not(:focus) {
+  background-color: #212a3a;
+}
+
+.header-search-form:hover .header-search-btn {
+  opacity: 1;
+}
+
+.header-search-form-field:focus + .header-search-btn {
+  background-image: url("../img/svg/icon-search-red.svg");
+  opacity: 1;
 }
 
 /*Закладки, корзина, оформить заказ*/
@@ -186,11 +200,37 @@ img {
 }
 
 .header-bookmark-link {
+  position: relative;
   padding-left: 44px;
 }
 
+.header-bookmark-link::before {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  content: "";
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/svg/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .header-cart-link {
+  position: relative;
   padding-left: 50px;
+}
+
+.header-cart-link::before {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/icon-cart.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .header-full-cart-link {
@@ -205,8 +245,6 @@ img {
   background-color: #63a63e;
 }
 
-.header-search-form:hover,
-.header-search-form:hover input:not(:focus),
 .header-cart-link:hover,
 .header-bookmark-link:hover {
   background-color: #212a3a;
@@ -223,6 +261,11 @@ img {
 
 .header-order-link:active {
   background-color: #518534;
+}
+
+.header-bookmark-link:hover::before,
+.header-cart-link:hover::before {
+  opacity: 1;
 }
 
 /*Нижняя часть хэдэра*/
