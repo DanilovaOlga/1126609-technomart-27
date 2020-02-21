@@ -543,7 +543,7 @@ img {
 .main-navigation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 940px;
   margin: 0 auto;
   padding: 0;
@@ -553,7 +553,7 @@ img {
   box-shadow: inset 0 -5px 0 0 #293449;
 }
 
-.main-navigation-list a {
+.main-navigation-link {
   display: block;
   padding-top: 20px;
   padding-bottom: 23px;
@@ -565,11 +565,16 @@ img {
   color: #ffffff;
 }
 
-.main-navigation-list a:hover {
+.main-navigation-list {
+  padding-left: 22px;
+  padding-right: 24px;
+}
+
+.main-navigation-link:hover {
   background-color: #293449;
 }
 
-.main-navigation-list a:active {
+.main-navigation-link:active {
   opacity: 0.5;
   background-color: #1d2739;
 }
