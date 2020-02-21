@@ -283,7 +283,6 @@ img {
   margin: 0 auto;
   padding-top: 46px;
   padding-bottom: 40px;
-  background-color: bisque;
 }
 
 .header-store-category {
@@ -323,6 +322,9 @@ img {
   font-size: 21px;
   line-height: 21px;
   color: #e9292a;
+  background-image: url("../img/svg/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: left 12px top 10px;
 }
 
 .header-address {
@@ -367,6 +369,7 @@ img {
 }
 
 .user-navigation-user-name {
+  position: relative;
   display: block;
   padding-top: 11px;
   padding-bottom: 13px;
@@ -376,6 +379,27 @@ img {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user-navigation-user-name::before {
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: 13px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/svg/icon-user.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-navigation-user-name:hover::before,
+.user-navigation-user-name:focus::before {
+  opacity: 1;
+}
+
+.user-navigation-user-name:active::before {
+  opacity: 0.3;
 }
 
 .user-navigation-exit {
@@ -389,7 +413,20 @@ img {
   padding-bottom: 13px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #ee3643;
+
+  background-image: url("../img/svg/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px top 11px;
+  opacity: 0.3;
+}
+
+.user-navigation-exit:hover,
+.user-navigation-exit:focus {
+  opacity: 1;
+}
+
+.user-navigation-exit:active {
+  opacity: 0.3;
 }
 
 .header-user-navigation-menu {
@@ -401,8 +438,21 @@ img {
 }
 
 .header-user-navigation-menu-item {
+  position: relative;
   margin-left: 17px;
   margin-right: 15px;
+}
+
+.header-user-navigation-menu-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  margin-top: -2px;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
 }
 
 .user-navigation-link {
@@ -436,8 +486,31 @@ img {
 }
 
 .btn-log-in {
+  position: relative;
   width: 121px;
   padding-left: 48px;
+
+}
+
+.btn-log-in::before {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  content: "";
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/svg/icon-login.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.btn-log-in:hover::before,
+.btn-log-in:focus::before {
+  opacity: 1;
+}
+
+.btn-log-in:active::before {
+  opacity: 0.3;
 }
 
 .btn-sign-in {
@@ -465,7 +538,6 @@ img {
 
 .header-main-navigation {
   background-color: #f4f7f9;
-  background-color: burlywood;
 }
 
 .main-navigation-list {
