@@ -281,12 +281,15 @@ img {
   justify-content: flex-end;
   width: 940px;
   margin: 0 auto;
-  padding-top: 45px;
+  padding-top: 46px;
   padding-bottom: 40px;
+  background-color: bisque;
 }
 
 .header-store-category {
-  width: 196px;
+  flex-shrink: 0;
+  width: 200px;
+  padding-top: 2px;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 53px;
@@ -299,9 +302,7 @@ img {
 
 .header-contacts {
   width: 270px;
-  margin-left: 71px;
-
-  text-align: center;
+  margin-left: 68px;
 }
 
 .header-phone,
@@ -315,9 +316,8 @@ img {
   width: 270px;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 74px;
-  padding-right: 45px;
-  margin-bottom: 10px;
+  padding-left: 71px;
+  margin-bottom: 3px;
   border: 3px solid #ffffff;
 
   font-size: 21px;
@@ -327,71 +327,69 @@ img {
 
 .header-address {
   font-size: 14px;
+  line-height: 24px;
+  text-align: center;
   color: #32425c;
 }
 
 /*Навигация пользователя*/
 
 .header-user-navigation {
-  margin-left: 69px;
+  width: 299px;
+  margin-left: 51px;
 
   font-size: 0;
   line-height: 0;
 }
 
-.header-user-navigation-authorized {
-  margin-left: 51px;
-}
-
 .header-user-navigation-login,
-.header-user-navigation-authorized-list {
+.header-user-navigation-authorized {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.user-navigation-btn,
+/*Авторизованный пользователь*/
+
+.header-user-navigation-authorized {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 299px;
+  margin-bottom: 7px;
+
+  background-color: #ffffff;
+}
+
 .user-navigation-user-name {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 47px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.btn-sign-in {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 25px;
-  padding-right: 25px;
-  border: none;
-}
-
-.btn-log-in {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 27px;
-  padding-left: 48px;
-  border: none;
-}
-
-.header-user-navigation-login-item {
-  margin-right: 10px;
-}
-
-.header-user-navigation-login-item:last-child {
-  margin-right: 0;
-}
-
-.user-navigation-user-name {
-  display: block;
-  width: 302px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 47px;
-  padding-right: 69px;
-  margin-bottom: 8px;
+.user-navigation-exit {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ee3643;
 }
 
 .header-user-navigation-menu {
@@ -403,18 +401,8 @@ img {
 }
 
 .header-user-navigation-menu-item {
-  margin-left: 20px;
-  margin-right: 13px;
-}
-
-.user-navigation-btn:hover,
-.user-navigation-user-name:hover {
-  color: #ee3643;
-}
-
-.user-navigation-btn:active,
-.user-navigation-user-name:active {
-  color: rgba(0, 0, 0, 0.3);
+  margin-left: 17px;
+  margin-right: 15px;
 }
 
 .user-navigation-link {
@@ -424,7 +412,8 @@ img {
   text-decoration: underline;
 }
 
-.user-navigation-link:hover {
+.user-navigation-link:hover,
+.user-navigation-link:focus {
   color: #ee3643;
 }
 
@@ -433,10 +422,50 @@ img {
   opacity: 0.3;
 }
 
+/*Неавторизованный пользователь*/
+
+.user-navigation-btn {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 13px;
+
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.btn-log-in {
+  width: 121px;
+  padding-left: 48px;
+}
+
+.btn-sign-in {
+  width: 150px;
+  padding-left: 25px;
+}
+
+.header-user-navigation-login-item:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.user-navigation-btn:hover,
+.user-navigation-user-name:hover,
+.user-navigation-btn:focus,
+.user-navigation-user-name:focus {
+  color: #ee3643;
+}
+
+.user-navigation-btn:active,
+.user-navigation-user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*Главная навигация*/
 
 .header-main-navigation {
   background-color: #f4f7f9;
+  background-color: burlywood;
 }
 
 .main-navigation-list {
