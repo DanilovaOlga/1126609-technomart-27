@@ -570,19 +570,14 @@ img {
   padding-right: 24px;
 }
 
-.main-navigation-link:hover {
+.main-navigation-link:hover,
+.main-navigation-link:focus {
   background-color: #293449;
 }
 
 .main-navigation-link:active {
   opacity: 0.5;
   background-color: #1d2739;
-}
-
-/*Мэйн*/
-
-.main-content {
-  background-color: #ffffff;
 }
 
 /*Футер*/
@@ -778,6 +773,12 @@ img {
 .footer-feedback-link:active,
 .footer-developer-link:active {
   color: #ee3643;
+}
+
+/*Мэйн*/
+
+.main-content {
+  background-color: #ffffff;
 }
 
 /*Главная страница*/
@@ -1359,35 +1360,53 @@ img {
 .breadcrumbs-navigation-list {
   display: flex;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-right: 17px;
+  padding-left: 0;
   margin: 0;
-  padding: 0;
 
   list-style: none;
 }
 
-.breadcrumbs-navigation-list li,
-.breadcrumbs-navigation-list a {
-  display: block;
-
+.breadcrumbs-navigation-item,
+.breadcrumbs-navigation-link {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.breadcrumbs-navigation-list li:last-child,
-.breadcrumbs-navigation-list a {
-  padding-top: 20px;
-  padding-bottom: 21px;
-  padding-right: 17px;
-  padding-left: 24px;
+.breadcrumbs-navigation-link {
+  padding-right: 26px;
+  padding-left: 18px;
+
+  background-image: url("../img/svg/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: top 7px right 0;
+}
+
+.breadcrumbs-navigation-item:first-child {
+  padding-left: 0;
+  padding-right: 23px;
+}
+
+.breadcrumbs-navigation-item:last-child {
+  background-image: none;
 }
 
 .breadcrumbs-navigation-index-icon {
   display: block;
-  width: 31px;
-  height: 12px;
+  width: 14px;
+  height: 17px;
+
+  background-image: url("../img/svg/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: left -1px top 3px;
+  background-size: 14px 12px;
 }
+
+/*Содержимое страницы*/
 
 .catalog-heading {
   width: 940px;
@@ -1397,7 +1416,7 @@ img {
   margin-right: auto;
   padding-top: 29px;
   padding-bottom: 31px;
-  padding-left: 30px;
+  padding-left: 28px;
 
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
@@ -1436,18 +1455,20 @@ img {
 }
 
 .products-filter-heading {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 18px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 19px;
   margin-top: 0;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   border-radius: 3px;
 }
 
 .products-filter-price-heading,
 .products-filter-brands-heading,
 .products-filter-power-heading {
+  display: block;
   font-size: 17px;
+  line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -1464,9 +1485,13 @@ img {
 }
 
 .products-filter-price-value {
+  font-family: "PT Sans", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   width: 95px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 5px;
   border: none;
   border-radius: 3px;
 
@@ -1498,17 +1523,63 @@ img {
 .products-filter-range-container {
   width: 220px;
   height: 80px;
-  padding: 27px 20px;
+  padding: 39px 20px;
   margin-bottom: 9px;
   border-radius: 3px;
 
   background-color: #f7f3ec;
 }
 
+.filter-range-line-full {
+  width: 180px;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.filter-range-line-current {
+  position: relative;
+  width: 152px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.filter-range-btn {
+  position: absolute;
+  width: 20px;
+  height: 22px;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  background-image: url("../img/svg/filter-button.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 22px;
+}
+
+.filter-range-btn-left {
+  top: -9px;
+  left: -1px;
+}
+
+.filter-range-btn-right {
+  top: -9px;
+  right: -8px;
+}
+
+.filter-range-btn:hover {
+  cursor: grab;
+}
+
+.filter-range-btn:active {
+  cursor: grabbing;
+}
+
 .products-filter-brands-heading,
 .products-filter-power-heading {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 16px;
+  padding-bottom: 3px;
 }
 
 .products-filter-brands-list,
@@ -1561,8 +1632,10 @@ img {
   display: flex;
   justify-content: space-between;
   width: 700px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-right: 17px;
+  padding-left: 19px;
   margin-bottom: 20px;
   border-radius: 3px;
 
@@ -1570,8 +1643,12 @@ img {
 }
 
 .products-sorting-heading {
-  padding-left: 19px;
   margin: 0;
+}
+
+.products-sorting-link-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .products-sorting-link {
@@ -1585,7 +1662,31 @@ img {
   opacity: 0.3;
 }
 
-.products-sorting-link::before {
+.type-sorting {
+  margin-left: 71px;
+}
+
+.functional-sorting {
+  margin-left: 65px;
+}
+
+.sort-ascending,
+.sort-descending {
+  width: 11px;
+  height: 18px;
+}
+
+.sort-ascending {
+  margin-right: 21px;
+  margin-left: 46px;
+}
+
+.sort-ascending:active .sort-ascending-triangle,
+.sort-descending:active .sort-descending-triangle {
+  fill: #ee3643;
+}
+
+.products-sorting-link:not(.active-sort):not(.sort-descending):not(.sort-ascending)::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1593,11 +1694,13 @@ img {
   border-bottom: 1px dotted #ee3643;
 }
 
-.products-sorting-link:hover:not(.active-sort) {
+.products-sorting-link:hover:not(.active-sort),
+.products-sorting-link:focus:not(.active-sort) {
   opacity: 1;
 }
 
-.products-sorting-link:hover:not(.active-sort)::before {
+.products-sorting-link:hover:not(.active-sort):not(.sort-descending):not(.sort-ascending)::before,
+.products-sorting-link:focus:not(.active-sort):not(.sort-descending):not(.sort-ascending)::before {
   border-bottom: 1px solid #ee3643;
 }
 
@@ -1653,8 +1756,8 @@ img {
 
 .product-heading {
   max-width: 190px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 8px;
   margin: 0 auto;
 
   font-family: "PT Sans", sans-serif;
@@ -1679,8 +1782,8 @@ img {
 }
 
 .old-price {
-  padding-top: 6px;
-  padding-bottom: 9px;
+  padding-top: 4px;
+  padding-bottom: 11px;
 
   color: #999999;
   text-decoration: line-through;
