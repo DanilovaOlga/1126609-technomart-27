@@ -134,52 +134,38 @@
           <fieldset class="products-filter-brands-field">
             <legend class="products-filter-brands-heading">Производители:</legend>
             <ul class="products-filter-brands-list">
-              <li>
-                <label>
-                  <input type="checkbox" name="bosch">
-                  Bosch
-                </label>
+              <li class="products-filter-brands-item">
+                <input class="visually-hidden brand-checkbox" id="filter-bosch" type="checkbox" name="bosch">
+                <label class="brand-label" for="filter-bosch">Bosch</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="interskol">
-                  Интерскол
-                </label>
+              <li class="products-filter-brands-item">
+                <input class="visually-hidden brand-checkbox" id="filter-interskol" type="checkbox" name="interskol">
+                <label class="brand-label" for="filter-interskol">Интерскол</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="makita">
-                  Makita
-                </label>
+              <li class="products-filter-brands-item">
+                <input class="visually-hidden brand-checkbox" id="filter-makita" type="checkbox" name="makita">
+                <label class="brand-label" for="filter-makita">Makita</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="dewalt">
-                  Dewalt
-                </label>
+              <li class="products-filter-brands-item">
+                <input class="visually-hidden brand-checkbox" id="filter-dewalt" type="checkbox" name="dewalt">
+                <label class="brand-label" for="filter-dewalt">Dewalt</label>
               </li>
-              <li>
-                <label>
-                  <input type="checkbox" name="hitachi">
-                  Hitachi
-                </label>
+              <li class="products-filter-brands-item">
+                <input class="visually-hidden brand-checkbox" id="filter-hitachi" type="checkbox" name="hitachi">
+                <label class="brand-label" for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="product-filter-power-field">
             <legend class="products-filter-power-heading">Питание:</legend>
             <ul class="products-filter-power-list">
-              <li>
-                <label>
-                  <input type="radio" name="power-supply" value="accumulator">
-                  Аккумуляторные
-                </label>
+              <li class="products-filter-power-item">
+                <input class="visually-hidden power-radio" id="filter-accumulator" type="radio" name="power-supply" value="accumulator">
+                <label class="power-label" for="filter-accumulator">Аккумуляторные</label>
               </li>
-              <li>
-                <label>
-                  <input type="radio" name="power-supply" value="mains-power">
-                  Сетевые
-                </label>
+              <li class="products-filter-power-item">
+                <input class="visually-hidden power-radio" id="filter-mains" type="radio" name="power-supply" value="mains-power">
+                <label class="power-label" for="filter-mains">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -194,9 +180,9 @@
             <a class="products-sorting-link type-sorting" href="">По типу</a>
             <a class="products-sorting-link functional-sorting" href="">По функционалу</a>
             <a class="products-sorting-link sort-ascending" href="" aria-label="По возрастанию">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path class="sort-ascending-triangle" fill="#231F20" d="M5.5 0L0 10h11z"/>
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path class="sort-ascending-triangle" fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
             </a>
             <a class="products-sorting-link sort-descending" href="" aria-label="По убыванию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">

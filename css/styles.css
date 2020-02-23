@@ -1431,8 +1431,8 @@ img {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 29px;
-  padding-bottom: 31px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 28px;
 
   font-family: "Cuprum", sans-serif;
@@ -1592,6 +1592,8 @@ img {
   cursor: grabbing;
 }
 
+/*Фильтр бренд*/
+
 .products-filter-brands-heading,
 .products-filter-power-heading {
   padding-top: 16px;
@@ -1615,16 +1617,63 @@ img {
   border: none;
 }
 
-.products-filter-brands-list li,
-.products-filter-power-list li {
+.brand-label,
+.power-label {
+  position: relative;
+  display: block;
   padding-left: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  cursor: pointer;
 }
 
-.products-filter-brands-list input,
-.products-filter-power-list input {
-  display: none;
+.brand-label::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 27px;
+  height: 24px;
+  margin-top: -10px;
+
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.brand-label:hover::before,
+.brand-checkbox:focus + .brand-label::before {
+  background-image: url("../img/svg/checkbox-off-hover.svg");
+}
+
+.brand-checkbox:checked + .brand-label::before {
+  background-image: url("../img/svg/checkbox-on.svg");
+}
+
+.brand-checkbox:checked + .brand-label:hover::before,
+.brand-checkbox:checked:focus + .brand-label::before {
+  background-image: url("../img/svg/checkbox-on-hover.svg");
+}
+
+.brand-checkbox:disabled + .brand-label {
+  opacity: 0.3;
+}
+
+.brand-checkbox:checked:disabled + .brand-label {
+  opacity: 0.3;
+}
+
+/*Фильтр питание*/
+
+.power-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #8ed78f;
 }
 
 .products-filter-btn-show {
