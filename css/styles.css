@@ -706,8 +706,9 @@ img {
 
 .footer-bottom-block-container {
   display: flex;
-  padding-top: 37px;
-  padding-bottom: 30px;
+  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 34px;
   width: 940px;
   margin: 0 auto;
 }
@@ -719,27 +720,56 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right: 158px;
+  margin-right: 162px;
 }
 
 .social-network-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 132px;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: -3px;
-  margin-right: 114px;
+  margin-right: 119px;
   padding: 0;
 
   list-style: none;
+}
+
+.social-network-item {
+  margin-left: 3px;
+  margin-bottom: 3px;
 }
 
 .social-link {
   display: block;
   width: 42px;
   height: 42px;
-  margin: 0 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   border-radius: 50%;
+
   background-color: #212a3a;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-network-item:first-child {
+  margin-left: 0;
+}
+
+.social-link-vk {
+  background-image: url("../img/svg/icon-vk.svg");
+}
+
+.social-link-fb {
+  background-image: url("../img/svg/icon-fb.svg");
+}
+
+.social-link-ig {
+  background-image: url("../img/svg/icon-insta.svg");
 }
 
 .social-link:hover,
