@@ -1859,6 +1859,7 @@ img {
 }
 
 .product-card-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1866,6 +1867,24 @@ img {
   margin-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #e5e5e5;
+}
+
+.product-card-label-new {
+  display: none;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.label-new-show {
+  display: block;
 }
 
 .product-image {
@@ -1946,6 +1965,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .product-card-buy-btn {
