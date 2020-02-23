@@ -592,7 +592,7 @@ img {
 /*Футер верх*/
 
 .footer-top-block {
-  padding-bottom: 45px;
+  padding-bottom: 50px;
   background-color: #32425c;
 }
 
@@ -612,7 +612,7 @@ img {
   width: 220px;
   padding-top: 20px;
   padding-bottom: 25px;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   line-height: 0;
   text-align: center;
@@ -644,7 +644,8 @@ img {
 }
 
 .footer-info-menu-list {
-  padding-top: 20px;
+  padding-top: 19px;
+  padding-left: 30px;
 }
 
 .footer-info-menu-list a {
@@ -668,7 +669,7 @@ img {
 
 .footer-products-menu-list a {
   display: block;
-  padding-top: 23px;
+  padding-top: 18px;
   padding-bottom: 23px;
   padding-left: 30px;
   padding-right: 30px;
@@ -705,7 +706,7 @@ img {
 
 .footer-bottom-block-container {
   display: flex;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 30px;
   width: 940px;
   margin: 0 auto;
@@ -718,7 +719,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right: 161px;
+  margin-right: 158px;
 }
 
 .social-network-list {
@@ -726,7 +727,7 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: -3px;
-  margin-right: 119px;
+  margin-right: 114px;
   padding: 0;
 
   list-style: none;
@@ -753,7 +754,7 @@ img {
 }
 
 .footer-feedback {
-  margin-right: 53px;
+  margin-right: 52px;
 }
 
 .footer-developer {
@@ -1656,10 +1657,7 @@ img {
   background-image: url("../img/svg/checkbox-on-hover.svg");
 }
 
-.brand-checkbox:disabled + .brand-label {
-  opacity: 0.3;
-}
-
+.brand-checkbox:disabled + .brand-label,
 .brand-checkbox:checked:disabled + .brand-label {
   opacity: 0.3;
 }
@@ -1668,13 +1666,38 @@ img {
 
 .power-label::before {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   content: "";
   width: 25px;
-  height: 25px;
-  background-color: #8ed78f;
+  height: 26px;
+  margin-top: -13px;
+
+  background-image: url("../img/svg/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
+
+.power-label:hover::before,
+.power-radio:focus + .power-label::before {
+  background-image: url("../img/svg/radio-off-hover.svg");
+}
+
+.power-radio:checked + .power-label::before {
+  background-image: url("../img/svg/radio-on.svg");
+}
+
+.power-radio:checked + .power-label:hover::before,
+.power-radio:checked:focus + .power-label::before {
+  background-image: url("../img/svg/radio-on-hover.svg");
+}
+
+.power-radio:disabled + .power-label,
+.power-radio:checked:disabled + .power-label {
+  opacity: 0.3;
+}
+
+/*Кнопка "Показать"*/
 
 .products-filter-btn-show {
   width: 140px;
@@ -1855,6 +1878,7 @@ img {
 }
 
 .current-price {
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -1863,6 +1887,19 @@ img {
 
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.current-price::after {
+  position: absolute;
+  top: 0;
+  right: -19px;
+  content: "";
+  width: 0;
+  height: 0;
+
+  border: 19px solid white;
+  border-right-color: transparent;
+  border-left-color: #ee3643;
 }
 
 /*Кнопки ховера*/
@@ -1960,8 +1997,8 @@ img {
   min-width: 38px;
   min-height: 38px;
   margin-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
@@ -1991,7 +2028,7 @@ img {
 
 .pagination-link-next {
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 30px;
 }
 
 /*Информационная сноска*/
@@ -2009,7 +2046,7 @@ img {
 
 .product-footnote-heading {
   margin: 0;
-  padding-top: 0;
+  padding-top: 1px;
   padding-bottom: 28px;
   padding-left: 0;
   padding-right: 0;
