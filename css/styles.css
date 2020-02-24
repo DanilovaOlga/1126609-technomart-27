@@ -2129,18 +2129,31 @@ img {
 /*Товар добавлен в корзину*/
 
 .modal-add-to-cart {
+  position: fixed;
+  top: 200px;
+  left: 50%;
   width: 620px;
+  margin-left: -310px;
+  z-index: 5;
+  background-color: #ffffff;
+  background-image: url("../img/svg/icon-mark.svg");
+  background-position: left 81px top 55px;
+  background-repeat: no-repeat;
+  background-size: 66px 66px;
+  box-shadow:
+    0 20px 40px 0 rgba(41, 52, 73, 0.75),
+    inset 0 7px 0 0 #ee3643;
 }
 
 .add-to-cart-text {
   margin: 0;
   padding-top: 73px;
   padding-bottom: 67px;
+  padding-left: 179px;
 
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  text-align: center;
 }
 
 .add-to-cart-buttons {
@@ -2151,6 +2164,10 @@ img {
   margin: 0;
 
   background-color: #f1f1f1;
+}
+
+.add-to-cart-btn {
+  cursor: pointer;
 }
 
 .add-to-cart-btn:not(:last-child) {
@@ -2166,6 +2183,21 @@ img {
 
   color: #000000;
   background-color: #ffffff;
+}
+
+.add-to-cart-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  cursor: pointer;
 }
 
 /*Большая карта*/
