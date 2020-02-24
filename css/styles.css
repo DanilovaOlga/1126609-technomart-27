@@ -876,6 +876,8 @@ img {
   background-repeat: no-repeat;
   background-size: 22px 40px;
   background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .special-offers-sliders-btn-left {
@@ -1141,9 +1143,6 @@ img {
 }
 
 .popular-brands-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 220px;
   height: 145px;
   margin-left: 20px;
@@ -1158,6 +1157,19 @@ img {
 .popular-brands-item:active {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
+}
+
+.popular-brands-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  text-align: center;
+}
+
+.popular-brands-link img {
+  width: auto;
 }
 
 
@@ -1924,8 +1936,8 @@ img {
 .product-card-label-new {
   display: none;
   position: absolute;
-  top: -1px;
-  right: -1px;
+  top: 0;
+  right: 0;
   z-index: 1;
   width: 60px;
   height: 60px;
