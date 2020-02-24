@@ -612,8 +612,8 @@ img {
   position: relative;
   width: 220px;
   padding-top: 20px;
-  padding-bottom: 25px;
-  margin-bottom: 27px;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
 
   line-height: 0;
   text-align: center;
@@ -628,6 +628,7 @@ img {
   width: 323px;
   margin: 0;
   padding: 0;
+  margin-left: 3px;
 }
 
 .footer-phone-link {
@@ -646,7 +647,7 @@ img {
 
 .footer-info-menu-list {
   padding-top: 19px;
-  padding-left: 30px;
+  padding-left: 27px;
 }
 
 .footer-info-menu-list a {
@@ -844,7 +845,7 @@ img {
 .special-offers-item {
   position: relative;
   width: 300px;
-  padding-left: 25px;
+  padding-left: 23px;
   padding-right: 140px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -916,6 +917,7 @@ img {
 
 .popular-tools-heading {
   margin: 0;
+  padding-bottom: 2px;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -1017,7 +1019,7 @@ img {
   width: 135px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 14px;
   border-radius: 3px;
 
   font-size: 14px;
@@ -1039,6 +1041,7 @@ img {
 
 .open-catalog-link {
   width: 195px;
+  margin-bottom: 2px;
 }
 
 .open-catalog-link:hover {
@@ -1077,9 +1080,9 @@ img {
 }
 
 .popular-heading-text {
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 29px;
   margin: 0;
 
   font-family: "Cuprum", sans-serif;
@@ -1147,7 +1150,7 @@ img {
 .services-heading-text {
   margin: 0;
   padding-top: 64px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
   font-family: "Cuprum", sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -1190,7 +1193,7 @@ img {
 .services-btn {
   width: 240px;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   padding-left: 22px;
   border: none;
   box-shadow:
@@ -1227,8 +1230,8 @@ img {
 
 .services-sliders-item {
   display: none;
-  padding-top: 68px;
-  padding-bottom: 125px;
+  padding-top: 67px;
+  padding-bottom: 129px;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -1305,7 +1308,7 @@ img {
 }
 
 .delivery-information-paragraph-first {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .delivery-information-paragraph-second {
@@ -1314,12 +1317,12 @@ img {
 
 .delivery-information-paragraph-third {
   width: 179px;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 }
 
 .delivery-information-headline {
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -1338,7 +1341,7 @@ img {
 
 .transport-companies-list {
   margin-top: 0;
-  margin-bottom: 37px;
+  margin-bottom: 20px;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -1351,8 +1354,21 @@ img {
 }
 
 .transport-companies-list li {
+  position: relative;
   padding-left: 36px;
-  margin-bottom: 22px;
+  padding-top: 3px;
+  padding-bottom: 17px;
+}
+
+.transport-companies-list li::before {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  content: "";
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
 }
 
 .self-delivery {
