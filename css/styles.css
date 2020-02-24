@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
@@ -2123,7 +2124,28 @@ img {
 .modal-map,
 .modal-message,
 .modal-add-to-cart {
+  display: none;
+}
+
+.modal-show {
   display: block;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+  border: 0;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-close.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+
+  cursor: pointer;
 }
 
 /*Товар добавлен в корзину*/
@@ -2132,9 +2154,11 @@ img {
   position: fixed;
   top: 200px;
   left: 50%;
+  z-index: 5;
+
   width: 620px;
   margin-left: -310px;
-  z-index: 5;
+
   background-color: #ffffff;
   background-image: url("../img/svg/icon-mark.svg");
   background-position: left 81px top 55px;
@@ -2167,6 +2191,7 @@ img {
 }
 
 .add-to-cart-btn {
+  width: 220px;
   cursor: pointer;
 }
 
@@ -2174,42 +2199,46 @@ img {
   margin-right: 20px;
 }
 
-.checkout-btn {
-  width: 220px;
-}
-
 .continue-shopping-btn {
-  width: 220px;
-
   color: #000000;
   background-color: #ffffff;
-}
-
-.add-to-cart-close-btn {
-  position: absolute;
-  top: 16px;
-  right: 9px;
-  width: 21px;
-  height: 21px;
-  border: 0;
-
-  background-color: transparent;
-  background-image: url("../img/svg/icon-close.svg");
-  background-repeat: no-repeat;
-  background-size: 21px 21px;
-  cursor: pointer;
 }
 
 /*Большая карта*/
 
 .modal-map {
+  position: absolute;
+  bottom: 646px;
+  left: 50%;
+  z-index: 4;
+
+  margin-left: -470px;
   width: 940px;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 14px 1px rgba(47, 42, 43, 0.5);
+}
+
+.modal-close-btn-map {
+  top: 9px;
 }
 
 /*Напишите нам!*/
 
 .modal-message {
+  position: fixed;
+  bottom: 201px;
+  left: 50%;
+  z-index: 5;
+
+  display: none;
+  margin-left: -310px;
   width: 620px;
+
+  background-color: #ffffff;
+  box-shadow:
+    0 20px 40px 0 rgba(0, 0, 0, 0.75),
+    inset 0 7px 0 0 #ee3643;
 }
 
 .modal-message-fields-container p {
