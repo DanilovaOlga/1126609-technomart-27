@@ -888,6 +888,41 @@ img {
   background-image: url("../img/svg/icon-right.svg");
 }
 
+/*Круглые кнопки слайдера*/
+
+.sliders-btn-dot-container {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  bottom: 36px;
+  margin-left: -15px;
+}
+
+.sliders-btn-dot {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  border: none;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+.sliders-btn-dot-red {
+  background-color: #ee3643;
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.sliders-btn-dot:last-child {
+  margin-right: 0;
+}
+
 .popular-tools-item {
   display: none;
   flex-direction: column;
