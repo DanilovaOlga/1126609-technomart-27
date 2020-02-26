@@ -2074,12 +2074,13 @@ img {
   left: 0;
   z-index: 5;
 
-  display: none;
+  display: flex;
   width: 220px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 170px;
+  opacity: 0;
 }
 
 .product-card-item:hover .product-image {
@@ -2087,7 +2088,11 @@ img {
 }
 
 .product-card-item:hover .product-card-hover-block {
-  display: flex;
+  opacity: 1;
+}
+
+.product-card-buy-btn:focus {
+  opacity: 1;
 }
 
 .product-card-item:hover {
@@ -2182,6 +2187,7 @@ img {
 .product-footnote-content {
   margin: 0;
   padding: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 24px;
