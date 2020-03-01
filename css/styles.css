@@ -592,7 +592,8 @@ img {
 }
 
 .main-navigation-link:hover,
-.main-navigation-link:focus {
+.main-navigation-link:focus,
+.main-navigation-current-page {
   background-color: #293449;
 }
 
@@ -1879,15 +1880,17 @@ img {
 .products-sorting-link-container {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 139px;
 }
 
 .products-sorting-link {
   position: relative;
-  display: block;
+  display: inline-block;
 
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  vertical-align: top;
   color: #000000;
   opacity: 0.3;
 }
@@ -1900,6 +1903,11 @@ img {
   margin-left: 65px;
 }
 
+.products-sorting-graduation {
+  margin-left: 46px;
+  font-size: 0;
+}
+
 .sort-ascending,
 .sort-descending {
   width: 11px;
@@ -1908,7 +1916,6 @@ img {
 
 .sort-ascending {
   margin-right: 21px;
-  margin-left: 46px;
 }
 
 .sort-ascending:active .sort-ascending-triangle,
