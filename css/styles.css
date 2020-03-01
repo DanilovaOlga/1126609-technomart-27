@@ -2339,6 +2339,20 @@ img {
     inset 0 7px 0 0 #ee3643;
 }
 
+.modal-message-open {
+  animation: message-open;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.modal-error {
+  animation: message-error;
+  animation-duration: 0.1s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+}
+
 .modal-message input,
 .modal-message textarea {
   outline: none;
@@ -2415,4 +2429,51 @@ img {
 
 .modal-message-send-btn {
   width: 100%;
+}
+
+@keyframes message-open {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes message-error {
+  0% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0);
+  }
+  10% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.1);
+  }
+  20% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.2);
+  }
+  30% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.3);
+  }
+  40% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.4);
+  }
+  50% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.5);
+  }
+  60% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.6);
+  }
+  70% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.7);
+  }
+  80% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.8);
+  }
+  90% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 0.9);
+  }
+  100% {
+    box-shadow: 0 20px 40px 0 rgba(238, 54, 67, 1);
+  }
 }

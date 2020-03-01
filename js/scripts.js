@@ -39,7 +39,7 @@ window.addEventListener("keydown", function (evt) {
 
 if (document.querySelector(".main-index")) {
 
-  // Всплывающие окна сообщения и карты
+  // Отправить сообщение
 
   var openMessagePopup = document.querySelector(".message-btn");
   var messagePopup = document.querySelector(".modal-message");
@@ -47,9 +47,6 @@ if (document.querySelector(".main-index")) {
   var userEmail = messagePopup.querySelector("[name=user-email]");
   var userMessage = messagePopup.querySelector("[name=user-message]");
   var sendForm = messagePopup.querySelector(".modal-message-form");
-
-  var openMap = document.querySelector(".map-image");
-  var mapPopup = document.querySelector(".modal-map");
 
   var isStorageSupport = true;
   var storageName = "";
@@ -65,6 +62,7 @@ if (document.querySelector(".main-index")) {
   openMessagePopup.addEventListener("click", function (evt) {
     evt.preventDefault();
     messagePopup.classList.add("modal-show");
+    messagePopup.classList.add("modal-message-open");
     popupBackground.classList.add("modal-back-show");
     if (storageName) {
       userName.value = storageName;
@@ -82,6 +80,9 @@ if (document.querySelector(".main-index")) {
   sendForm.addEventListener("submit", function (evt) {
     if (!userName.value || !userEmail.value || !userMessage.value) {
       evt.preventDefault();
+      messagePopup.classList.remove("modal-error");
+      messagePopup.offsetWidth = messagePopup.offsetWidth;
+      messagePopup.classList.add("modal-error");
     }
     else {
       if (isStorageSupport) {
@@ -91,15 +92,23 @@ if (document.querySelector(".main-index")) {
     }
   });
 
+  // Открыть карту
+
+  var openMap = document.querySelector(".map-image");
+  var mapPopup = document.querySelector(".modal-map");
+
   openMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
     popupBackground.classList.add("modal-back-show");
   });
 
+  // Закрыть окно сообщения и карту
+
   document.querySelector(".modal-close-btn-message").addEventListener("click", function (evt) {
     evt.preventDefault();
     messagePopup.classList.remove("modal-show");
+    messagePopup.classList.remove("modal-error");
     popupBackground.classList.remove("modal-back-show");
   });
 
@@ -111,6 +120,7 @@ if (document.querySelector(".main-index")) {
 
   popupBackground.addEventListener("click", function () {
     messagePopup.classList.remove("modal-show");
+    messagePopup.classList.remove("modal-error");
     mapPopup.classList.remove("modal-show");
     popupBackground.classList.remove("modal-back-show");
   });
@@ -119,6 +129,7 @@ if (document.querySelector(".main-index")) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       messagePopup.classList.remove("modal-show");
+      messagePopup.classList.remove("modal-error");
       mapPopup.classList.remove("modal-show");
       popupBackground.classList.remove("modal-back-show");
     }
