@@ -1359,6 +1359,7 @@ img {
 }
 
 .delivery-information-paragraph-second {
+  width: 386px;
   margin-bottom: 16px;
 }
 
@@ -1966,6 +1967,10 @@ img {
   line-height: 20px;
   text-transform: none;
   text-align: center;
+}
+
+.product-image-container {
+  min-height: 170px;
 }
 
 .old-price,
