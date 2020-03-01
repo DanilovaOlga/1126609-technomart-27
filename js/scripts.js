@@ -1,3 +1,5 @@
+// Купить - добавить в корзину
+
 var popupBackground = document.querySelector(".modal-back");
 var openToCartPopup = document.querySelectorAll(".product-card-buy-btn");
 var toCartPopup = document.querySelector(".modal-add-to-cart");
@@ -37,18 +39,56 @@ window.addEventListener("keydown", function (evt) {
 
 if (document.querySelector(".main-index")) {
 
+  // Всплывающие окна сообщения и карты
+
   var openMessagePopup = document.querySelector(".message-btn");
   var messagePopup = document.querySelector(".modal-message");
   var userName = messagePopup.querySelector("[name=user-name]");
+  var userEmail = messagePopup.querySelector("[name=user-email]");
+  var userMessage = messagePopup.querySelector("[name=user-message]");
+  var sendForm = messagePopup.querySelector(".modal-message-form");
 
   var openMap = document.querySelector(".map-image");
   var mapPopup = document.querySelector(".modal-map");
+
+  var isStorageSupport = true;
+  var storageName = "";
+  var storageEmail = "";
+
+  try {
+    storageName = localStorage.getItem("userName");
+    storageEmail = localStorage.getItem("userEmail");
+  }  catch (err) {
+    isStorageSupport = false;
+  }
 
   openMessagePopup.addEventListener("click", function (evt) {
     evt.preventDefault();
     messagePopup.classList.add("modal-show");
     popupBackground.classList.add("modal-back-show");
-    userName.focus();
+    if (storageName) {
+      userName.value = storageName;
+      userEmail.focus();
+    }
+    else {
+      userName.focus();
+    }
+    if (storageEmail) {
+      userEmail.value = storageEmail;
+      userMessage.focus();
+    }
+  });
+
+  sendForm.addEventListener("submit", function (evt) {
+    if (!userName.value || !userEmail.value || !userMessage.value) {
+      evt.preventDefault();
+    }
+    else {
+      if (isStorageSupport) {
+        localStorage.setItem("userName", userName.value);
+        localStorage.setItem("userEmail", userEmail.value);
+      }
+    }
   });
 
   openMap.addEventListener("click", function (evt) {
@@ -84,7 +124,7 @@ if (document.querySelector(".main-index")) {
     }
   });
 
-  // Слайдер промо блока
+  // Слайдер промо блока по стрелкам
 
   var showNextSlide = document.querySelector(".special-offers-sliders-btn-right");
   var showPrevSlide = document.querySelector(".special-offers-sliders-btn-left");
@@ -116,14 +156,15 @@ if (document.querySelector(".main-index")) {
     sliderDots[currentSlideIndex].classList.add("sliders-btn-dot-red");
   });
 
+  // Слайдер промо блока по точкам
+
   for (var i = 0; i < sliderDots.length; i++) {
     sliderDots[i].addEventListener("click", function (evt) {
         evt.preventDefault();
         popularToolsSlide[currentSlideIndex].classList.remove("popular-tools-item-visible");
         sliderDots[currentSlideIndex].classList.remove("sliders-btn-dot-red");
-        var currentBtn = evt.target;
         for (var i = 0; i < sliderDots.length; i++) {
-          if (sliderDots[i] === currentBtn) {
+          if (sliderDots[i] === evt.target) {
             currentSlideIndex = i;
             break;
           }
@@ -144,10 +185,8 @@ if (document.querySelector(".main-index")) {
         evt.preventDefault();
         servicesSlides[currentSlideIndex].classList.remove("services-sliders-item-visible");
         showServicesSlide[currentSlideIndex].classList.remove("services-btn-active");
-        var activeBtn = evt.target;
-        console.log(activeBtn);
         for (var j = 0; j < showServicesSlide.length; j++) {
-          if (showServicesSlide[j] === activeBtn) {
+          if (showServicesSlide[j] === evt.target) {
             currentSlideIndex = j;
             break;
           }
