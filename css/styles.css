@@ -52,6 +52,15 @@ img {
   background-color: #ee3643;
 }
 
+.frequent-button:hover,
+.frequent-button:focus {
+  background-color: #ca2c37;
+}
+
+.frequent-button:active {
+  background-color: #ba2732;
+}
+
 .logo-link {
   display: block;
   background-color: #ee3643;
@@ -146,6 +155,11 @@ img {
   background-position: 0 0;
   opacity: 0.3;
   cursor: pointer;
+}
+
+.header-search-btn:focus {
+  opacity: 1;
+  outline: 1px solid #ffffff;
 }
 
 .header-search-form-field {
@@ -247,7 +261,9 @@ img {
 }
 
 .header-cart-link:hover,
-.header-bookmark-link:hover {
+.header-cart-link:focus,
+.header-bookmark-link:hover,
+.header-bookmark-link:focus {
   background-color: #212a3a;
 }
 
@@ -256,7 +272,8 @@ img {
   background-color: #161d29;
 }
 
-.header-order-link:hover {
+.header-order-link:hover,
+.header-order-link:focus {
   background-color: #5fbb2d;
 }
 
@@ -265,7 +282,9 @@ img {
 }
 
 .header-bookmark-link:hover::before,
-.header-cart-link:hover::before {
+.header-cart-link:hover::before,
+.header-bookmark-link:focus::before,
+.header-cart-link:focus::before{
   opacity: 1;
 }
 
@@ -432,6 +451,7 @@ img {
 
 .header-user-navigation-menu {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -638,6 +658,7 @@ img {
 .footer-info-menu-list,
 .footer-products-menu-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
   padding: 0;
@@ -647,7 +668,7 @@ img {
 
 .footer-info-menu-list {
   padding-top: 19px;
-  padding-left: 27px;
+  padding-left: 24px;
 }
 
 .footer-info-menu-list a {
@@ -688,8 +709,10 @@ img {
   padding-right: 0;
 }
 
-.footer-navigation a:hover {
+.footer-navigation a:hover,
+.footer-navigation a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .footer-navigation a:active {
@@ -775,8 +798,10 @@ img {
 }
 
 .social-link:hover,
+.social-link:focus,
 .social-link:active {
   background-color: #ee3643;
+  outline: none;
 }
 
 .footer-feedback,
@@ -799,8 +824,11 @@ img {
 }
 
 .footer-feedback-link:hover,
-.footer-developer-link:hover {
+.footer-feedback-link:focus,
+.footer-developer-link:hover,
+.footer-developer-link:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 .footer-feedback-link:active,
@@ -880,6 +908,10 @@ img {
   cursor: pointer;
 }
 
+.special-offers-sliders-btn:focus {
+  outline: 1px dotted #ffffff;
+}
+
 .special-offers-sliders-btn-left {
   left: 25px;
   background-image: url("../img/svg/icon-left.svg");
@@ -914,6 +946,10 @@ img {
   background-color: #ffffff;
 
   cursor: pointer;
+}
+
+.sliders-btn-dot:focus {
+  outline: 1px dotted #ffffff;
 }
 
 .sliders-btn-dot-red {
@@ -1068,7 +1104,8 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.special-offers-link:hover {
+.special-offers-link:hover,
+.special-offers-link:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -1079,14 +1116,6 @@ img {
 .open-catalog-link {
   width: 195px;
   margin-bottom: 2px;
-}
-
-.open-catalog-link:hover {
-  background-color: #ca2c37;
-}
-
-.open-catalog-link:active {
-  background-color: #ba2732;
 }
 
 /*Секции популярных товаров и производителей*/
@@ -1166,6 +1195,12 @@ img {
   width: 220px;
   height: 145px;
   text-align: center;
+}
+
+.popular-brands-link:hover,
+.popular-brands-link:focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  outline: none;
 }
 
 .popular-brands-link img {
@@ -1256,13 +1291,18 @@ img {
   background-color: #32425c;
 }
 
+.services-btn:not(.services-btn-active) {
+  cursor: pointer;
+}
+
 .services-btn-active {
   box-shadow: none;
   color: #32425c;
   background-color: #ffffff;
 }
 
-.services-btn:hover:not(.services-btn-active) {
+.services-btn:hover:not(.services-btn-active),
+.services-btn:focus:not(.services-btn-active) {
   background-color: #293449;
 }
 
@@ -1277,8 +1317,9 @@ img {
 
 .services-sliders-item {
   display: none;
+  height: 100%;
   padding-top: 67px;
-  padding-bottom: 129px;
+
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -1297,6 +1338,7 @@ img {
 
 .services-sliders-item-credit {
   background-image: url("../img/index/services/credit.png");
+  background-size: 465px 285px;
 }
 
 .services-sliders-heading {
@@ -1330,6 +1372,11 @@ img {
 .services-sliders-credit {
   width: 279px;
 }
+
+.send-application-btn {
+  width: 195px;
+  margin-top: 28px;
+ }
 
 /*Информация о доставке*/
 
@@ -2141,8 +2188,10 @@ img {
   background-color: #ffffff;
 }
 
-.pagination-link:hover {
+.pagination-link:hover,
+.pagination-link:focus {
   border-color: #bdc6ca;
+  outline: none;
 }
 
 .pagination-link:active {
