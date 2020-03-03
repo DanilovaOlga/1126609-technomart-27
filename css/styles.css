@@ -1195,6 +1195,7 @@ img {
   align-items: center;
   width: 220px;
   height: 145px;
+
   text-align: center;
 }
 
@@ -1206,6 +1207,38 @@ img {
 
 .popular-brands-link img {
   width: auto;
+}
+
+.bosh-logo {
+  padding-bottom: 6px;
+}
+
+.makita-logo {
+  padding-bottom: 9px;
+}
+
+.dewalt-logo {
+  padding-bottom: 10px;
+}
+
+.interskol-logo {
+  padding-bottom: 19px;
+}
+
+.hitachi-logo {
+  padding-bottom: 2px;
+}
+
+.lg-logo {
+  padding-bottom: 6px;
+}
+
+.aeg-logo {
+  padding-bottom: 7px;
+}
+
+.metabo-logo {
+  padding-bottom: 11px;
 }
 
 /*Сервисы*/
@@ -2073,15 +2106,14 @@ img {
 
 .current-price::after {
   position: absolute;
-  top: 0;
-  right: -19px;
+  top: -2px;
+  right: -21px;
   content: "";
   width: 0;
   height: 0;
 
-  border: 19px solid white;
-  border-right-color: transparent;
-  border-left-color: #ee3643;
+  border: 21px solid #ffffff;
+  border-left-color: transparent;
 }
 
 /*Кнопки ховера*/
