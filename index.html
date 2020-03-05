@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link href="css/normalize-opti.css" rel="stylesheet">
-  <link href="css/styles-opti.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,9 +34,7 @@
         Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
       </p>
       <div class="header-contacts">
-        <p class="header-phone">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </p>
+        <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
@@ -110,17 +108,13 @@
         </div>
         <ul class="popular-tools-list">
           <li class="popular-tools-item popular-tools-item-visible popular-tools-item-drill">
-            <div class="popular-tools-heading-container">
-              <h3 class="popular-tools-heading">Дрели</h3>
-              Соседям на радость!
-            </div>
+            <h3 class="popular-tools-heading">Дрели</h3>
+            Соседям на радость!
             <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="popular-tools-item popular-tools-item-perforator">
-            <div class="popular-tools-heading-container">
-              <h3 class="popular-tools-heading">Перфораторы</h3>
-              Настоящие мужские игрушки
-            </div>
+            <h3 class="popular-tools-heading">Перфораторы</h3>
+            Настоящие мужские игрушки
             <a class="frequent-button open-catalog-link" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
@@ -264,13 +258,11 @@
   </section>
   <section class="services">
     <div class="services-container">
-      <div class="services-heading">
-        <h2 class="services-heading-text">Сервисы</h2>
-        <p>
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
-          покупки приятными.
-        </p>
-      </div>
+      <h2 class="services-heading-text">Сервисы</h2>
+      <p class="services-heading">
+        Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
+        покупки приятными.
+      </p>
       <div class="services-sliders-container">
         <ul class="services-btn-list">
           <li>
@@ -346,7 +338,7 @@
           <img src="img/svg/logo-technomart.svg" width="138" height="23" alt="Магазин «Техномарт».">
         </a>
         <p class="footer-address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a class="footer-phone-link" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
       </div>
@@ -404,11 +396,11 @@
         </li>
       </ul>
       <p class="footer-feedback">
-        Обратная связь:<br>
+        Обратная связь:
         <a class="footer-feedback-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </p>
       <p class="footer-developer">
-        Разработано —<br>
+        Разработано —
         <a class="footer-developer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
     </div>
@@ -426,29 +418,21 @@
   <form class="modal-message-form" action="https://echo.htmlacademy.ru/courses" method="post">
     <div class="modal-message-fields-container">
       <p>
-        <label class="modal-message-label">
-          Ваше имя:<br>
-          <input class="modal-message-field modal-message-input" type="text" name="user-name" placeholder="Имя Фамилия">
-        </label>
+        <label class="modal-message-label" for="user-name">Ваше имя:</label>
+        <input class="modal-message-field modal-message-input" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label class="modal-message-label">
-          Ваш e-mail:<br>
-          <input class="modal-message-field modal-message-input" type="email" name="user-email"
-                 placeholder="email@example.com">
-        </label>
+        <label class="modal-message-label" for="user-email">Ваш e-mail:</label>
+        <input class="modal-message-field modal-message-input" id="user-email" type="email" name="user-email" placeholder="email@example.com">
       </p>
       <p>
-        <label class="modal-message-label">
-          Текст письма:<br>
-          <textarea class="modal-message-field modal-message-textarea" name="user-message"
-                    placeholder="В свободной форме" rows="4"></textarea>
-        </label>
+        <label class="modal-message-label" for="user-message">Текст письма:</label>
+        <textarea class="modal-message-field modal-message-textarea" id="user-message" name="user-message" placeholder="В свободной форме" rows="4"></textarea>
       </p>
     </div>
-    <p class="modal-message-send">
+    <div class="modal-message-send">
       <button class="modal-message-send-btn frequent-button" type="submit">Отправить</button>
-    </p>
+    </div>
   </form>
   <button class="modal-close-btn modal-close-btn-message" type="button" aria-label="Закрыть"></button>
 </div>
