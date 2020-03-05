@@ -1439,12 +1439,12 @@ img {
 }
 
 .delivery-information-paragraph-second {
-  width: 386px;
+  width: 387px;
   margin-bottom: 16px;
 }
 
 .delivery-information-paragraph-third {
-  width: 179px;
+  width: 180px;
   margin-bottom: 31px;
 }
 
@@ -2420,22 +2420,16 @@ img {
 /*Большая карта*/
 
 .modal-map {
-  position: absolute;
-  bottom: 646px;
+  position: fixed;
+  bottom: 25%;
   left: 50%;
-  z-index: 14;
+  z-index: 15;
 
   margin-left: -470px;
   width: 940px;
   height: 446px;
   background-color: #ffffff;
   box-shadow: 0 0 14px 1px rgba(47, 42, 43, 0.5);
-}
-
-.modal-map {
-  border: none;
-  padding: 0;
-  margin-bottom: 0;
 }
 
 .modal-close-btn-map {
