@@ -42,7 +42,7 @@ img {
   border: none;
   border-radius: 3px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -69,7 +69,7 @@ img {
 /*Шапка*/
 
 .main-header {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
 .header-top-line {
@@ -608,7 +608,7 @@ img {
 /*Футер*/
 
 .main-footer {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -859,7 +859,7 @@ img {
   margin-top: 59px;
   margin-bottom: 33px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
 }
 
 .special-offers-list {
@@ -1156,7 +1156,7 @@ img {
   padding-left: 29px;
   margin: 0;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1250,7 +1250,7 @@ img {
 .services {
   margin-bottom: 78px;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1271,7 +1271,7 @@ img {
   margin: 0;
   padding-top: 64px;
   padding-bottom: 26px;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1315,7 +1315,7 @@ img {
   box-shadow: inset 0 -1px 0 0 #293449,
   inset 0 1px 0 0 #405069;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -1381,7 +1381,7 @@ img {
   margin-left: 0;
   padding: 0;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -1428,7 +1428,7 @@ img {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -1455,7 +1455,7 @@ img {
   margin-right: 0;
   padding: 0;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1475,7 +1475,7 @@ img {
   padding: 0;
 
   list-style: none;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -1522,7 +1522,7 @@ img {
 /*Каталог*/
 
 .main-catalog {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   color: #000000;
 }
 
@@ -1611,7 +1611,7 @@ img {
   padding-bottom: 30px;
   padding-left: 28px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -1677,7 +1677,7 @@ img {
 }
 
 .products-filter-price-value {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 17px;
   line-height: 18px;
   width: 95px;
@@ -2068,7 +2068,7 @@ img {
   padding-bottom: 8px;
   margin: 0 auto;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 18px;
   line-height: 20px;
   text-transform: none;
@@ -2131,7 +2131,7 @@ img {
   padding-bottom: 10px;
   border-radius: 3px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2234,7 +2234,7 @@ img {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2285,7 +2285,7 @@ img {
   padding-left: 0;
   padding-right: 0;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -2297,7 +2297,7 @@ img {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -2376,7 +2376,7 @@ img {
   padding-bottom: 67px;
   padding-left: 179px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
@@ -2407,7 +2407,7 @@ img {
   border: none;
   border-radius: 3px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -2488,7 +2488,7 @@ img {
 
 .modal-message-label {
   display: block;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -2496,7 +2496,7 @@ img {
 
 .modal-message-input::placeholder,
 .modal-message-textarea::placeholder {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #999999;
@@ -2510,7 +2510,7 @@ img {
   border: 2px solid #d7dcde;
   border-radius: 3px;
 
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
   font-size: 17px;
   line-height: 18px;
   background-color: #ffffff;
