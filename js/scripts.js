@@ -7,33 +7,57 @@ var toCartPopup = document.querySelector(".modal-add-to-cart");
 for (var i = 0; i < openToCartPopup.length; i++) {
   openToCartPopup[i].addEventListener("click", function (evt) {
     evt.preventDefault();
+    if (toCartPopup.classList.contains("modal-close")) {
+      toCartPopup.classList.remove("modal-close");
+    }
     toCartPopup.classList.add("modal-show");
+    toCartPopup.classList.add("modal-open");
     popupBackground.classList.add("modal-back-show");
   });
 }
 
 document.querySelector(".modal-close-btn-to-cart").addEventListener("click", function (evt) {
   evt.preventDefault();
-  toCartPopup.classList.remove("modal-show");
+  toCartPopup.classList.remove("modal-open");
+  toCartPopup.classList.add("modal-close");
   popupBackground.classList.remove("modal-back-show");
+  setTimeout(function () {
+      toCartPopup.classList.remove("modal-show");
+    }, 500
+  );
 });
 
 document.querySelector(".continue-shopping-btn").addEventListener("click", function (evt) {
   evt.preventDefault();
-  toCartPopup.classList.remove("modal-show");
+  toCartPopup.classList.remove("modal-open");
+  toCartPopup.classList.add("modal-close");
   popupBackground.classList.remove("modal-back-show");
+  setTimeout(function () {
+      toCartPopup.classList.remove("modal-show");
+    }, 500
+  );
 });
 
 popupBackground.addEventListener("click", function () {
-  toCartPopup.classList.remove("modal-show");
+  toCartPopup.classList.remove("modal-open");
+  toCartPopup.classList.add("modal-close");
   popupBackground.classList.remove("modal-back-show");
+  setTimeout(function () {
+      toCartPopup.classList.remove("modal-show");
+    }, 500
+  );
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    toCartPopup.classList.remove("modal-show");
+    toCartPopup.classList.remove("modal-open");
+    toCartPopup.classList.add("modal-close");
     popupBackground.classList.remove("modal-back-show");
+    setTimeout(function () {
+        toCartPopup.classList.remove("modal-show");
+      }, 500
+    );
   }
 });
 
@@ -55,20 +79,22 @@ if (document.querySelector(".main-index")) {
   try {
     storageName = localStorage.getItem("userName");
     storageEmail = localStorage.getItem("userEmail");
-  }  catch (err) {
+  } catch (err) {
     isStorageSupport = false;
   }
 
   openMessagePopup.addEventListener("click", function (evt) {
     evt.preventDefault();
+    if (messagePopup.classList.contains("modal-close")) {
+      messagePopup.classList.remove("modal-close")
+    }
     messagePopup.classList.add("modal-show");
-    messagePopup.classList.add("modal-message-open");
+    messagePopup.classList.add("modal-open");
     popupBackground.classList.add("modal-back-show");
     if (storageName) {
       userName.value = storageName;
       userEmail.focus();
-    }
-    else {
+    } else {
       userName.focus();
     }
     if (storageEmail) {
@@ -83,8 +109,7 @@ if (document.querySelector(".main-index")) {
       messagePopup.classList.remove("modal-error");
       messagePopup.offsetWidth = messagePopup.offsetWidth;
       messagePopup.classList.add("modal-error");
-    }
-    else {
+    } else {
       if (isStorageSupport) {
         localStorage.setItem("userName", userName.value);
         localStorage.setItem("userEmail", userEmail.value);
@@ -99,7 +124,11 @@ if (document.querySelector(".main-index")) {
 
   openMap.addEventListener("click", function (evt) {
     evt.preventDefault();
+    if (mapPopup.classList.contains("modal-close")) {
+      mapPopup.classList.remove("modal-close")
+    }
     mapPopup.classList.add("modal-show");
+    mapPopup.classList.add("modal-open");
     popupBackground.classList.add("modal-back-show");
   });
 
@@ -107,31 +136,67 @@ if (document.querySelector(".main-index")) {
 
   document.querySelector(".modal-close-btn-message").addEventListener("click", function (evt) {
     evt.preventDefault();
-    messagePopup.classList.remove("modal-show");
+    messagePopup.classList.remove("modal-open");
     messagePopup.classList.remove("modal-error");
     popupBackground.classList.remove("modal-back-show");
+    messagePopup.classList.add("modal-close");
+    setTimeout(function () {
+        messagePopup.classList.remove("modal-show");
+      }, 500
+    );
   });
 
   document.querySelector(".modal-close-btn-map").addEventListener("click", function (evt) {
     evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
+    mapPopup.classList.remove("modal-open");
     popupBackground.classList.remove("modal-back-show");
+    mapPopup.classList.add("modal-close");
+    setTimeout(function () {
+        mapPopup.classList.remove("modal-show");
+      }, 500
+    );
   });
 
   popupBackground.addEventListener("click", function () {
-    messagePopup.classList.remove("modal-show");
-    messagePopup.classList.remove("modal-error");
-    mapPopup.classList.remove("modal-show");
     popupBackground.classList.remove("modal-back-show");
+
+    messagePopup.classList.remove("modal-open");
+    messagePopup.classList.remove("modal-error");
+    messagePopup.classList.add("modal-close");
+    setTimeout(function () {
+        messagePopup.classList.remove("modal-show");
+      }, 500
+    );
+
+    mapPopup.classList.remove("modal-open");
+    popupBackground.classList.remove("modal-back-show");
+    mapPopup.classList.add("modal-close");
+    setTimeout(function () {
+        mapPopup.classList.remove("modal-show");
+      }, 500
+    );
   });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      messagePopup.classList.remove("modal-show");
-      messagePopup.classList.remove("modal-error");
-      mapPopup.classList.remove("modal-show");
       popupBackground.classList.remove("modal-back-show");
+
+      messagePopup.classList.remove("modal-open");
+      messagePopup.classList.remove("modal-error");
+      messagePopup.classList.add("modal-close");
+      setTimeout(function () {
+          messagePopup.classList.remove("modal-show");
+        }, 500
+      );
+
+      mapPopup.classList.remove("modal-open");
+      popupBackground.classList.remove("modal-back-show");
+      mapPopup.classList.add("modal-close");
+      setTimeout(function () {
+          mapPopup.classList.remove("modal-show");
+        }, 500
+      );
     }
   });
 

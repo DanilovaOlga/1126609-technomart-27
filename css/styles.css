@@ -1761,12 +1761,10 @@ img {
 }
 
 .filter-range-btn:hover {
-  cursor: -webkit-grab;
   cursor: grab;
 }
 
 .filter-range-btn:active {
-  cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
@@ -2452,8 +2450,15 @@ img {
   inset 0 7px 0 0 #ee3643;
 }
 
-.modal-message-open {
-  animation: message-open;
+.modal-open {
+  animation: modal-open;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+.modal-close {
+  animation: modal-close;
+  /*animation-direction: reverse;*/
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
 }
@@ -2547,7 +2552,7 @@ img {
   width: 100%;
 }
 
-@keyframes message-open {
+@keyframes modal-open {
   0% {
     opacity: 0;
     transform: translateY(-200px);
@@ -2555,6 +2560,15 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes modal-close {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
